@@ -1,0 +1,34 @@
+[
+    {
+        "id" : 2,
+        "menuName" : "Home"
+    },
+    {
+        "id" : 3,
+        "menuName" : "Features"
+    },
+    {
+        "id" : 4,
+        "menuName" : "Services"
+    },
+    {
+        "id" : 5,
+        "menuName" : "Team"
+    },
+    {
+        "id" : 6,
+        "menuName" : "Pricing"
+    },
+    {
+        "id" : 7,
+        "menuName" : "Faq"
+    },
+    {
+        "id" : 8,
+        "menuName" : "Blog"
+    },
+    {
+        "id" : 9,
+        "menuName" : "Contact"
+    }
+]

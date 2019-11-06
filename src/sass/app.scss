@@ -1,0 +1,21 @@
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Theme Import 
+
+@import 'themeone/default.css';
+@import 'themeone/magnific-popup.css';
+@import 'themeone/materialdesignicons.min.css';
+@import 'themeone/owl.carousel.css';
+@import 'themeone/owl.theme.css';
+@import 'themeone/owl.transitions.css';
+@import 'themeone/pe-icon-7-stroke.css';
+@import 'themeone/style.css';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
