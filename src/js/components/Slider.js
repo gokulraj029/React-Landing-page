@@ -12,7 +12,7 @@ class Slider extends Component{
                                                         return(                           
                         <div className="carousel-inner"  key={index}>
                          
-                            <div className="carousel-item + this.active ? ' active' : ''" style={{ backgroundImage: 'url(https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-150595123.jpg)' }} >
+                            <div className="carousel-item active" style={{ backgroundImage: 'url(https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-150595123.jpg)' }} >
                                 <div className="bg-overlay"></div>
                                 <div className="home-center">
                                     <div className="home-desc-center">

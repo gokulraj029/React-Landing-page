@@ -67378,7 +67378,7 @@ function (_Component) {
         className: ""
       }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "contact-heading"
-      }, " Customer care "), ":", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, " Customer care Number "), ":", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "mt-2"
       }, "+1 234 56 7894"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "contact-info mb-5"
@@ -68504,7 +68504,7 @@ function (_Component) {
           className: "carousel-inner",
           key: index
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "carousel-item + this.active ? ' active' : ''",
+          className: "carousel-item active",
           style: {
             backgroundImage: 'url(https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-150595123.jpg)'
           }
@@ -68932,7 +68932,7 @@ module.exports = JSON.parse("[{\"id\":1,\"image\":\"https://iso.500px.com/wp-con
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+// Custom Scripts
 
 /***/ }),
 
@@ -70127,9 +70127,9 @@ eval(function (p, a, c, k, _e, r) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\gokulraj\test\react\boilerplate\v1\src\js\app.js */"./src/js/app.js");
-__webpack_require__(/*! D:\gokulraj\test\react\boilerplate\v1\src\js\script.js */"./src/js/script.js");
-module.exports = __webpack_require__(/*! D:\gokulraj\test\react\boilerplate\v1\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! D:\gokulraj\test\react\boilerplate\react landing page\React-Landing-page\src\js\app.js */"./src/js/app.js");
+__webpack_require__(/*! D:\gokulraj\test\react\boilerplate\react landing page\React-Landing-page\src\js\script.js */"./src/js/script.js");
+module.exports = __webpack_require__(/*! D:\gokulraj\test\react\boilerplate\react landing page\React-Landing-page\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })
