@@ -1,0 +1,41 @@
+[
+    {
+        "id" : 1,
+        "heading" : "FREE",           
+        "amount_type" : "$",        
+        "amount_rupee" : "9",        
+        "amount_month" : "mo",        
+        "plan1" : "50GB Disk Space",
+        "plan2" : "50 Email Accounts",        
+        "plan3" : "High Speed Internet",        
+        "plan4" : "10 Subdomains",        
+        "plan5" : "50GB Monthly Bandwidth",        
+        "action" : "Jion Now"
+    },
+    {
+        "id" : 2,
+        "heading" : "",           
+        "amount_type" : "$",        
+        "amount_rupee" : "29",        
+        "amount_month" : "mo",        
+        "plan1" : "100GB Disk Space",
+        "plan2" : "100 Email Accounts",        
+        "plan3" : "High Speed Internet",        
+        "plan4" : "20 Subdomains",        
+        "plan5" : "100GB Monthly Bandwidth",        
+        "action" : "Jion Now"     
+    },
+    {
+        "id" : 3,
+        "heading" : "",           
+        "amount_type" : "$",        
+        "amount_rupee" : "9",        
+        "amount_month" : "mo",         
+        "plan1" : "2500GB Disk Space",
+        "plan2" : "210 Email Accounts",        
+        "plan3" : "High Speed Internet",        
+        "plan4" : "50 Subdomains",        
+        "plan5" : "150GB Monthly Bandwidth",         
+        "action" : "Jion Now"     
+    }
+]

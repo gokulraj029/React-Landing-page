@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "Social_icon" : "mdi mdi-facebook"
+    },
+    {
+        "id" : 2,
+        "Social_icon" : "mdi mdi-twitter"
+    },
+    {
+        "id" : 3,
+        "Social_icon" : "mdi mdi-instagram"
+    },
+    {
+        "id" : 4,
+        "Social_icon" : "mdi mdi-dribbble"
+    },
+    {
+        "id" : 5,
+        "Social_icon" : "list-inline-item"
+    }
+]

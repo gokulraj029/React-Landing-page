@@ -1,0 +1,38 @@
+[
+    {
+        "id" : 1,
+        "profile" : "images/team/team-1.jpg",           
+        "name" : "Robert McClanahan",        
+        "desination" : "CEO/Founder",
+        "facebook" : "mdi mdi-facebook",        
+        "google+" : "mdi mdi-google",        
+        "twitter" : "mdi mdi-twitter"
+    },
+    {
+        "id" : 2,
+        "profile" : "images/team/team-1.jpg",           
+        "name" : "Diane Williams",        
+        "desination" : "CTO/Co-Founder",
+        "facebook" : "mdi mdi-facebook",        
+        "google+" : "mdi mdi-google",        
+        "twitter" : "mdi mdi-twitter"      
+    },
+    {
+        "id" : 3,
+        "profile" : "images/team/team-1.jpg",           
+        "name" : "Andrew Tomlinson",        
+        "desination" : "Sr. Web Designer",
+        "facebook" : "mdi mdi-facebook",        
+        "google+" : "mdi mdi-google",        
+        "twitter" : "mdi mdi-twitter"      
+    },
+    {
+        "id" : 4,
+        "profile" : "images/team/team-1.jpg",           
+        "name" : "James Miller",        
+        "desination" : "Sr. Web Developer",
+        "facebook" : "mdi mdi-facebook",        
+        "google+" : "mdi mdi-google",        
+        "twitter" : "mdi mdi-twitter"      
+    }
+]

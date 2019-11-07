@@ -1,0 +1,20 @@
+[
+    {
+        "id" : 1,
+        "paragraph" : " Europan lingues es membres del sam familie. Lor separat existentie Por scientie, musica, sport etc, litot Europa usa li sam vocabular.",           
+        "heading" : "Creativity",        
+        "icon" : "pe-7s-paint-bucket mr-4 mt-3 text-custom"        
+    },
+    {
+        "id" : 2,
+        "paragraph" : "Europan lingues es membres del sam familie. Lor separat existentie Por scientie, musica, sport etc, litot Europa usa li sam vocabular.",           
+        "heading" : "Easy to customize",        
+        "icon" : "pe-7s-world mr-4 mt-3 text-custom"       
+    },
+    {
+        "id" : 3,
+        "paragraph" : "Europan lingues es membres del sam familie. Lor separat existentie Por scientie, musica, sport etc, litot Europa usa li sam vocabular.",           
+        "heading" : "Responsive Design",        
+        "icon" : "pe-7s-monitor mr-4 mt-3 text-custom"       
+    }
+]

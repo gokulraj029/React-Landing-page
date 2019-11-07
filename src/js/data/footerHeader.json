@@ -1,0 +1,30 @@
+[
+    {
+        "id" : 1,
+        "menuName" : "Home"
+    },
+    {
+        "id" : 2,
+        "menuName" : "Features"
+    },
+    {
+        "id" : 3,
+        "menuName" : "Services"
+    },
+    {
+        "id" : 4,
+        "menuName" : "Client"
+    },
+    {
+        "id" : 5,
+        "menuName" : "Team"
+    },
+    {
+        "id" : 6,
+        "menuName" : "Blog"
+    },
+    {
+        "id" : 7,
+        "menuName" : "Contact"
+    }
+]

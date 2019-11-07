@@ -1,0 +1,38 @@
+[
+    {
+        "id" : 1,
+        "icon" : "pe-7s-photo-gallery",
+        "heading" : "Strategy Solutions",
+        "paragraph" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore."
+    },
+    {
+        "id" : 2,
+        "icon" : "pe-7s-helm",
+        "heading" : "UI/UX Design",
+        "paragraph" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore."
+    },
+    {
+        "id" : 3,
+        "icon" : "pe-7s-plane",
+        "heading" : "Branding Identity",
+        "paragraph" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore."
+    },
+    {
+        "id" : 4,
+        "icon" : "pe-7s-rocket",
+        "heading" : "Easy to Use",
+        "paragraph" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore."
+    },
+    {
+        "id" : 5,
+        "icon" : "pe-7s-target",
+        "heading" : "Dynamic Growth",
+        "paragraph" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore."
+    },
+    {
+        "id" : 6,
+        "icon" : "pe-7s-like2",
+        "heading" : "Friendly Support",
+        "paragraph" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore."
+    }
+]

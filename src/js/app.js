@@ -19,6 +19,7 @@ require('./components/Agency.js');
 require('./components/Subscribe.js');
 require('./components/Team.js');
 require('./components/Pricing.js');
+require('./components/Faq.js');
 require('./components/Blog.js');
 require('./components/Contect.js');
 require('./components/Fooder.js');
