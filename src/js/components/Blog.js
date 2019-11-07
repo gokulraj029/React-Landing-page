@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
+import OurBlogData from '../data/blog.json'
 export default class Blog extends Component {
     render() {
         return (
@@ -19,71 +19,31 @@ export default class Blog extends Component {
                 </div>
 
                 <div className="row mt-5">
-                     <div className="col-lg-4">
-                        <div className="blog-box">
-                            <img src="images/blog/blog-1.jpg" alt="" className="img-fluid mx-auto d-block rounded" />
-                            <div className="blog-info p-3">
-                                <a href="#">
-                                    <h3 className="pt-2 text-dark"> A enim ad minim veniam quis. </h3>
-                                </a>
-                                <div>
-                                    <div className="admin-post pt-2">
-                                        <span className=""><i className="mdi mdi-clock"></i> 01 Nov 2018 </span>
-                                        <i className="mdi mdi-account"></i>  <a href="#" className="text-dark">Albert Lynn</a>
-                                        <div className="separator-line mt-2 mb-2  "></div>
-                                        <p className="pt-0  text-muted ">The most well-known dummy text is the Lorem Ipsum which is said to have originated.</p>
-                                    </div>
-                                    <div className="pt-3 pb-3">
-                                        <a href="#" className="text-custom">Read More <i className="mdi mdi-arrow-right"></i> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4">
-                        <div className="blog-box">
-                            <img src="images/blog/blog-5.jpg" alt="" className="img-fluid mx-auto d-block rounded" />
-                            <div className="blog-info p-3">
-                                <a href="#">
-                                    <h3 className="pt-2 text-dark"> Lorem ipsum dolor sit amet...  </h3>
-                                </a>
-                                <div>
-                                    <div className="admin-post pt-2">
-                                        <span className=""><i className="mdi mdi-clock"></i> 01 Nov 2018 </span>
-                                        <i className="mdi mdi-account"></i>  <a href="#" className="text-dark">Terrence Roloff</a>
-                                        <div className="separator-line mt-2 mb-2  "></div>
-                                        <p className="pt-0  text-muted ">The most well-known dummy text is the Lorem Ipsum which is said to have originated.</p>
-                                    </div>
-                                    <div className="pt-3 pb-3">
-                                        <a href="#" className="text-custom">Read More <i className="mdi mdi-arrow-right"></i> </a>
+                    {OurBlogData.map((ourBlog, index) => {
+                        return(
+                            <div className="col-lg-4" key={index}>
+                                <div className="blog-box">
+                                    <img src={`${ourBlog.image}`} alt="" className="img-fluid mx-auto d-block rounded" />
+                                    <div className="blog-info p-3">
+                                        <a href="#">
+                                            <h3 className="pt-2 text-dark"> {ourBlog.heading}</h3>
+                                        </a>
+                                        <div>
+                                            <div className="admin-post pt-2">
+                                                <span className=""><i className={`${ourBlog.tag_icon}`}></i> 01 Nov 2018 </span>
+                                                <i className={`${ourBlog.tag_icon}`}></i>  <a href="#" className="text-dark">{ourBlog.tag}</a>
+                                                <div className="separator-line mt-2 mb-2  "></div>
+                                                <p className="pt-0  text-muted ">{ourBlog.paragraph}</p>
+                                            </div>
+                                            <div className="pt-3 pb-3">
+                                                <a href="#" className="text-custom">{ourBlog.readmore} <i className={`${ourBlog.readmore_icon}`}></i> </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4">
-                        <div className="blog-box">
-                            <img src="images/blog/blog-3.jpg" alt="" className="img-fluid mx-auto d-block rounded" />
-                            <div className="blog-info p-3">
-                                <a href="#">
-                                    <h3 className="pt-2 text-dark"> Consectetuer adipiscing elit aenean commodo...  </h3>
-                                </a>
-                                <div>
-                                    <div className="admin-post pt-2">
-                                        <span className=""><i className="mdi mdi-clock"></i> 01 Nov 2018 </span>
-                                        <i className="mdi mdi-account"></i>  <a href="#" className="text-dark">Karleen Hammond</a>
-                                        <div className="separator-line mt-2 mb-2  "></div>
-                                        <p className="pt-0  text-muted ">The most well-known dummy text is the Lorem Ipsum which is said to have originated.</p>
-                                    </div>
-                                    <div className="pt-3 pb-3">
-                                        <a href="#" className="text-custom">Read More <i className="mdi mdi-arrow-right"></i> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        )
+                    })}
                 </div>
             </div>
         </section>

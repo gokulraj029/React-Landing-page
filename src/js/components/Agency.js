@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import AgencyData from '../data/agency.json'
 
 export default class Agency extends Component {
     render() {
@@ -29,33 +30,20 @@ export default class Agency extends Component {
                     </div>
 
                     <div className="col-lg-5 offset-lg-1 ">
-                        <div className="more-features-content p-4">
-                            <div className="more-features-icon float-left">
-                                <i className="pe-7s-paint-bucket mr-4 mt-3 text-custom"></i>
-                            </div>
-                            <div className="more-features-desc">
-                                <h5 className="">Creativity</h5>
-                                <p className="text-muted mb-0">Europan lingues es membres del sam familie. Lor separat existentie Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</p>
-                            </div>
-                        </div>
-                        <div className="more-features-content p-4">
-                            <div className="more-features-icon float-left">
-                                <i className="pe-7s-world mr-4 mt-3 text-custom"></i>
-                            </div>
-                            <div className="more-features-desc">
-                                <h5 className="">Easy to customize</h5>
-                                <p className="text-muted mb-0">Europan lingues es membres del sam familie. Lor separat existentie Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</p>
-                            </div>
-                        </div>
-                        <div className="more-features-content p-4">
-                            <div className="more-features-icon float-left">
-                                <i className="pe-7s-monitor mr-4 mt-3 text-custom"></i>
-                            </div>
-                            <div className="more-features-desc">
-                                <h5 className="">Responsive Design</h5>
-                                <p className="text-muted mb-0">Europan lingues es membres del sam familie. Lor separat existentie Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</p>
-                            </div>
-                        </div>
+                        {AgencyData.map((agency, index)=>{
+                            return(
+                                <div className="more-features-content p-4" key={index}>
+                                    <div className="more-features-icon float-left">
+                                        <i className={`${agency.icon}`}></i>
+                                    </div>
+                                    <div className="more-features-desc">
+                                        <h5 className="">{agency.heading}</h5>
+                                        <p className="text-muted mb-0">{agency.paragraph}</p>
+                                    </div>
+                                </div>
+                            )
+                        })}
+
                     </div>
                 </div>
             </div>          

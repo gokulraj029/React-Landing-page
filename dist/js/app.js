@@ -66922,6 +66922,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_agency_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/agency.json */ "./src/js/data/agency.json");
+var _data_agency_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/agency.json */ "./src/js/data/agency.json", 1);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -66939,6 +66941,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -66992,43 +66995,22 @@ function (_Component) {
         className: "img-fluid mx-auto d-block"
       })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-lg-5 offset-lg-1 "
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "more-features-content p-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "more-features-icon float-left"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "pe-7s-paint-bucket mr-4 mt-3 text-custom"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "more-features-desc"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        className: ""
-      }, "Creativity"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted mb-0"
-      }, "Europan lingues es membres del sam familie. Lor separat existentie Por scientie, musica, sport etc, litot Europa usa li sam vocabular."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "more-features-content p-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "more-features-icon float-left"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "pe-7s-world mr-4 mt-3 text-custom"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "more-features-desc"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        className: ""
-      }, "Easy to customize"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted mb-0"
-      }, "Europan lingues es membres del sam familie. Lor separat existentie Por scientie, musica, sport etc, litot Europa usa li sam vocabular."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "more-features-content p-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "more-features-icon float-left"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "pe-7s-monitor mr-4 mt-3 text-custom"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "more-features-desc"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        className: ""
-      }, "Responsive Design"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted mb-0"
-      }, "Europan lingues es membres del sam familie. Lor separat existentie Por scientie, musica, sport etc, litot Europa usa li sam vocabular.")))))));
+      }, _data_agency_json__WEBPACK_IMPORTED_MODULE_2__.map(function (agency, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "more-features-content p-4",
+          key: index
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "more-features-icon float-left"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+          className: "".concat(agency.icon)
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "more-features-desc"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+          className: ""
+        }, agency.heading), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "text-muted mb-0"
+        }, agency.paragraph)));
+      })))));
     }
   }]);
 
@@ -67127,6 +67109,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_blog_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/blog.json */ "./src/js/data/blog.json");
+var _data_blog_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/blog.json */ "./src/js/data/blog.json", 1);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -67144,6 +67128,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -67181,115 +67166,46 @@ function (_Component) {
         className: "mt-3 text-muted"
       }, "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row mt-5"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "blog-box"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/blog/blog-1.jpg",
-        alt: "",
-        className: "img-fluid mx-auto d-block rounded"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "blog-info p-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        className: "pt-2 text-dark"
-      }, " A enim ad minim veniam quis. ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "admin-post pt-2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: ""
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-clock"
-      }), " 01 Nov 2018 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-account"
-      }), "  ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "text-dark"
-      }, "Albert Lynn"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "separator-line mt-2 mb-2  "
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "pt-0  text-muted "
-      }, "The most well-known dummy text is the Lorem Ipsum which is said to have originated.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pt-3 pb-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "text-custom"
-      }, "Read More ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-arrow-right"
-      }), " ")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "blog-box"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/blog/blog-5.jpg",
-        alt: "",
-        className: "img-fluid mx-auto d-block rounded"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "blog-info p-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        className: "pt-2 text-dark"
-      }, " Lorem ipsum dolor sit amet...  ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "admin-post pt-2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: ""
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-clock"
-      }), " 01 Nov 2018 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-account"
-      }), "  ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "text-dark"
-      }, "Terrence Roloff"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "separator-line mt-2 mb-2  "
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "pt-0  text-muted "
-      }, "The most well-known dummy text is the Lorem Ipsum which is said to have originated.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pt-3 pb-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "text-custom"
-      }, "Read More ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-arrow-right"
-      }), " ")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "blog-box"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/blog/blog-3.jpg",
-        alt: "",
-        className: "img-fluid mx-auto d-block rounded"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "blog-info p-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        className: "pt-2 text-dark"
-      }, " Consectetuer adipiscing elit aenean commodo...  ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "admin-post pt-2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: ""
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-clock"
-      }), " 01 Nov 2018 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-account"
-      }), "  ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "text-dark"
-      }, "Karleen Hammond"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "separator-line mt-2 mb-2  "
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "pt-0  text-muted "
-      }, "The most well-known dummy text is the Lorem Ipsum which is said to have originated.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pt-3 pb-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "text-custom"
-      }, "Read More ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-arrow-right"
-      }), " ")))))))));
+      }, _data_blog_json__WEBPACK_IMPORTED_MODULE_2__.map(function (ourBlog, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "col-lg-4",
+          key: index
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "blog-box"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "".concat(ourBlog.image),
+          alt: "",
+          className: "img-fluid mx-auto d-block rounded"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "blog-info p-3"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+          className: "pt-2 text-dark"
+        }, " ", ourBlog.heading)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "admin-post pt-2"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: ""
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+          className: "".concat(ourBlog.tag_icon)
+        }), " 01 Nov 2018 "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+          className: "".concat(ourBlog.tag_icon)
+        }), "  ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#",
+          className: "text-dark"
+        }, ourBlog.tag), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "separator-line mt-2 mb-2  "
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "pt-0  text-muted "
+        }, ourBlog.paragraph)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "pt-3 pb-3"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#",
+          className: "text-custom"
+        }, ourBlog.readmore, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+          className: "".concat(ourBlog.readmore_icon)
+        }), " "))))));
+      }))));
     }
   }]);
 
@@ -67576,6 +67492,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_faq_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/faq.json */ "./src/js/data/faq.json");
+var _data_faq_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/faq.json */ "./src/js/data/faq.json", 1);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -67593,6 +67511,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -67631,46 +67550,19 @@ function (_Component) {
       }, "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row mt-5"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-6"
+        className: "col-lg-12"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "faq-content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "faq-inner"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Is the Fake Name Generator illegal ?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted"
-      }, "It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. One may speculate that over the course of time certain letters were added or deleted at various positions. ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "underline"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "faq-inner"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "How can i get a money ?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted"
-      }, "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "underline"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "faq-inner"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Is safe use Lorem Ipsum ?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted"
-      }, "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-6"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "faq-content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "faq-inner"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, " How do I get my user name and my password ?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted"
-      }, "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classNameical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words. ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "underline"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "faq-inner"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "How can i get a job ?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted"
-      }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, fugiat iste nisi tempore nesciunt nemo fuga? Nesciunt, delectus laboriosam nisi repudiandae nam fuga saepe animi recusandae. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "underline"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "faq-inner"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "How many variations exist ?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted"
-      }, "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.")))))));
+        className: "faq-content row"
+      }, _data_faq_json__WEBPACK_IMPORTED_MODULE_2__.map(function (ourFaq, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "faq-inner col-lg-6",
+          key: index
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, ourFaq.heading), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "text-muted"
+        }, ourFaq.paragraph), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "underline"
+        }));
+      }))))));
     }
   }]);
 
@@ -67845,6 +67737,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_footerHeader_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/footerHeader.json */ "./src/js/data/footerHeader.json");
+var _data_footerHeader_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/footerHeader.json */ "./src/js/data/footerHeader.json", 1);
+/* harmony import */ var _data_social_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../data/social.json */ "./src/js/data/social.json");
+var _data_social_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/social.json */ "./src/js/data/social.json", 1);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -67862,6 +67758,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
 
 
 
@@ -67892,35 +67790,14 @@ function (_Component) {
         className: "footer-content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "list-unstyled text-center footerlink"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, "Services")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, "Features")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, "Clients")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, "Team")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, "Blog")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, "Contact Us"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, _data_footerHeader_json__WEBPACK_IMPORTED_MODULE_2__.map(function (footerMenu, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          className: "list-inline-item",
+          key: index
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#"
+        }, footerMenu.menuName));
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "footer-alt text-center mt-5 mb-5"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "mb-0"
@@ -67928,37 +67805,16 @@ function (_Component) {
         className: "footer-icon mt-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "list-unstyled social-icon text-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-facebook"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-twitter"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-instagram"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-dribbble"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-google"
-      }))))))))));
+      }, _data_social_json__WEBPACK_IMPORTED_MODULE_3__.map(function (socialIcon, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          className: "list-inline-item",
+          key: index
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+          className: "".concat(socialIcon.Social_icon)
+        })));
+      }))))))));
     }
   }]);
 
@@ -68159,6 +68015,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_ourClient_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/ourClient.json */ "./src/js/data/ourClient.json");
+var _data_ourClient_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/ourClient.json */ "./src/js/data/ourClient.json", 1);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -68176,6 +68034,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -68212,33 +68071,24 @@ function (_Component) {
         className: "mt-3 text-muted"
       }, "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row mt-5"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-6"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "testimonial-box text-center pt-4 pb-4 pr-3 pl-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "pt-3 text-muted"
-      }, "\" Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex Ut ullamco laboris nisi ea commodo consequat.Ut ullamco laboris nisi ut aliquip ex ea commodo consequat. \" "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "testimonial-client-img text-center mb-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/testi/testi-1.jpg",
-        className: "img-fluid  rounded-circle img-thumbnail"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "mb-0"
-      }, "Keri Nicholas"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Designer"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-6"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "testimonial-box text-center pt-4 pb-4 pr-3 pl-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "pt-3 text-muted"
-      }, "\" Auctor facilisi platea cum accumsan semper facilisis tristique. Ornare magnis tristique mauris, magna rutrum dignissim facilisis consequat congue fringilla nec hendrerit. \" "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "testimonial-client-img mb-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/testi/testi-2.jpg",
-        className: "img-fluid  rounded-circle img-thumbnail"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "mb-0"
-      }, "Charle nathan"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Designer"))))));
+      }, _data_ourClient_json__WEBPACK_IMPORTED_MODULE_2__.map(function (clientData, index) {
+        // alert(clientData)
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "col-lg-6",
+          key: index
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "testimonial-box text-center pt-4 pb-4 pr-3 pl-3"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "pt-3 text-muted"
+        }, clientData.paragraph, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "testimonial-client-img text-center mb-3"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "".concat(clientData.icon),
+          className: "img-fluid  rounded-circle img-thumbnail"
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+          className: "mb-0"
+        }, clientData.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, clientData.desination)));
+      }))));
     }
   }]);
 
@@ -68267,6 +68117,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_price_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/price.json */ "./src/js/data/price.json");
+var _data_price_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/price.json */ "./src/js/data/price.json", 1);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -68284,6 +68136,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -68321,64 +68174,27 @@ function (_Component) {
         className: "mt-3"
       }, "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row mt-5"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4 mt-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pricing-box text-center p-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pricing-title mt-3 mb-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        className: "mb-0"
-      }, "Free")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "price-plan"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sup", null, "$"), "9", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "/mo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "plan-features mt-4 mb-5"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "50GB Disk Space"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "50 Email Accounts"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "High Speed Internet"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "10 Subdomains"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "50GB Monthly Bandwidth")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "mb-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "btn btn-custom"
-      }, "Join Now")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4 mt-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pricing-box price-box-active text-center p-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pricing-title mt-3 mb-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        className: "mb-0"
-      }, "Economy")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "price-plan"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "text-custom"
-      }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sup", null, "$"), "29", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "/mo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "plan-features mt-4 mb-5"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "100GB Disk Space"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "100 Email Accounts"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "High Speed Internet"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "20 Subdomains"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "mb-0"
-      }, "100GB Monthly Bandwidth")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "mb-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "btn btn-custom"
-      }, "Join Now")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4 mt-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pricing-box text-center p-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pricing-title mt-3 mb-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        className: "mb-0"
-      }, "Deluxe")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "price-plan"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sup", null, "$"), "59", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "/mo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "plan-features mt-4 mb-5"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "1500GB Disk Space"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "150 Email Accounts"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "High Speed Internet"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "50 Subdomains"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "mb-0"
-      }, "150GB Monthly Bandwidth")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "mb-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "btn btn-custom"
-      }, "Join Now")))))));
+      }, _data_price_json__WEBPACK_IMPORTED_MODULE_2__.map(function (ourPrice, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "col-lg-4 mt-3",
+          key: index
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "pricing-box price-box-active text-center p-4"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "pricing-title mt-3 mb-4"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+          className: "mb-0"
+        }, ourPrice.heading)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "price-plan"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sup", null, ourPrice.amount_type), ourPrice.amount_rupee, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "/", ourPrice.amount_month))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "plan-features mt-4 mb-5"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, ourPrice.plan1), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, ourPrice.plan2), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, ourPrice.plan3), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, ourPrice.plan4), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, ourPrice.plan5)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "mb-4"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#",
+          className: "btn btn-custom"
+        }, ourPrice.action))));
+      }))));
     }
   }]);
 
@@ -68407,6 +68223,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_services_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/services.json */ "./src/js/data/services.json");
+var _data_services_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/services.json */ "./src/js/data/services.json", 1);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -68424,6 +68242,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -68461,93 +68280,24 @@ function (_Component) {
         className: "mt-3 text-muted"
       }, "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row mt-5"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-box text-center mt-2 p-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-icon text-custom mb-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "pe-7s-photo-gallery"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-desc"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: ""
-      }, "Strategy Solutions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted  pt-2"
-      }, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-box text-center mt-2 p-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-icon text-custom mb-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "pe-7s-helm"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-desc"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: ""
-      }, "UI/UX Design"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted  pt-2"
-      }, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-box text-center mt-2 p-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-icon text-custom mb-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "pe-7s-plane"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-desc"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: ""
-      }, "Branding Identity"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted  pt-2"
-      }, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore."))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row mt-5"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-box text-center mt-2 p-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-icon text-custom mb-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "pe-7s-rocket"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-desc"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: ""
-      }, "Easy to Use"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted  pt-2"
-      }, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-box text-center mt-2 p-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-icon text-custom mb-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "pe-7s-target"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-desc"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: ""
-      }, "Dynamic Growth"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted  pt-2"
-      }, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-box text-center mt-2 p-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-icon text-custom mb-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "pe-7s-like2"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "services-desc"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: ""
-      }, "Friendly Support"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-muted  pt-2"
-      }, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.")))))));
+      }, _data_services_json__WEBPACK_IMPORTED_MODULE_2__.map(function (service, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "col-lg-4",
+          key: index
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "services-box text-center mt-2 p-3"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "services-icon text-custom mb-3"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+          className: "".concat(service.icon)
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "services-desc"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+          className: ""
+        }, service.heading), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "text-muted  pt-2"
+        }, service.paragraph))));
+      }))));
     }
   }]);
 
@@ -68860,6 +68610,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_team_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/team.json */ "./src/js/data/team.json");
+var _data_team_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/team.json */ "./src/js/data/team.json", 1);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -68877,6 +68629,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -68914,155 +68667,47 @@ function (_Component) {
         className: "mt-3 text-muted"
       }, "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row mt-4 pt-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-3 mt-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "team-box p-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "team-img"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/team/team-1.jpg",
-        alt: "",
-        className: " mx-auto d-block rounded-circle ",
-        height: "130"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "team-desc text-center mt-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "team-name text-custom mb-1"
-      }, "Robert McClanahan"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "team-work text-muted"
-      }, "CEO/Founder")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-        className: "list-inline team-social mt-4 mb-0 text-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-facebook"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-google"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-twitter"
-      })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-3 mt-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "team-box p-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "team-img"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/team/team-2.jpg",
-        alt: "",
-        className: " mx-auto d-block rounded-circle",
-        height: "130"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "team-desc text-center mt-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "team-name text-custom mb-1"
-      }, "Diane Williams"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "team-work text-muted"
-      }, "CTO/Co-Founder")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-        className: "list-inline team-social mt-4 mb-0 text-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-facebook"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-google"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-twitter"
-      })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-3 mt-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "team-box p-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "team-img"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/team/team-3.jpg",
-        alt: "",
-        className: " mx-auto d-block rounded-circle",
-        height: "130"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "team-desc text-center mt-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "team-name text-custom mb-1"
-      }, "Andrew Tomlinson"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "team-work text-muted"
-      }, "Sr. Web Designer")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-        className: "list-inline team-social mt-4 mb-0 text-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-facebook"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-google"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-twitter"
-      })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-3 mt-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "team-box p-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "team-img"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/team/team-4.jpg",
-        alt: "",
-        className: " mx-auto d-block rounded-circle",
-        height: "130"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "team-desc text-center mt-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "team-name text-custom mb-1"
-      }, "James Miller"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "team-work text-muted"
-      }, "Sr. Web Developer")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-        className: "list-inline team-social mt-4 mb-0 text-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-facebook"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-google"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "list-inline-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "mdi mdi-twitter"
-      })))))))));
+      }, _data_team_json__WEBPACK_IMPORTED_MODULE_2__.map(function (ourTeam, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "col-lg-3 mt-3",
+          key: index
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "team-box p-4"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "team-img"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "".concat(ourTeam.profile),
+          alt: "",
+          className: " mx-auto d-block rounded-circle ",
+          height: "130"
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "team-desc text-center mt-4"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+          className: "team-name text-custom mb-1"
+        }, ourTeam.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "team-work text-muted"
+        }, ourTeam.desination)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+          className: "list-inline team-social mt-4 mb-0 text-center"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          className: "list-inline-item"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+          className: "".concat(ourTeam.facebook)
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          className: "list-inline-item"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+          className: "".concat(ourTeam.google)
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          className: "list-inline-item"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+          className: "".concat(ourTeam.twitter)
+        }))))));
+      }))));
     }
   }]);
 
@@ -69074,6 +68719,50 @@ function (_Component) {
 if (document.getElementById('team')) {
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Team, null), document.getElementById('team'));
 }
+
+/***/ }),
+
+/***/ "./src/js/data/agency.json":
+/*!*********************************!*\
+  !*** ./src/js/data/agency.json ***!
+  \*********************************/
+/*! exports provided: 0, 1, 2, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":1,\"paragraph\":\" Europan lingues es membres del sam familie. Lor separat existentie Por scientie, musica, sport etc, litot Europa usa li sam vocabular.\",\"heading\":\"Creativity\",\"icon\":\"pe-7s-paint-bucket mr-4 mt-3 text-custom\"},{\"id\":2,\"paragraph\":\"Europan lingues es membres del sam familie. Lor separat existentie Por scientie, musica, sport etc, litot Europa usa li sam vocabular.\",\"heading\":\"Easy to customize\",\"icon\":\"pe-7s-world mr-4 mt-3 text-custom\"},{\"id\":3,\"paragraph\":\"Europan lingues es membres del sam familie. Lor separat existentie Por scientie, musica, sport etc, litot Europa usa li sam vocabular.\",\"heading\":\"Responsive Design\",\"icon\":\"pe-7s-monitor mr-4 mt-3 text-custom\"}]");
+
+/***/ }),
+
+/***/ "./src/js/data/blog.json":
+/*!*******************************!*\
+  !*** ./src/js/data/blog.json ***!
+  \*******************************/
+/*! exports provided: 0, 1, 2, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":1,\"image\":\"images/blog/blog-5.jpg\",\"heading\":\"A enim ad minim veniam quis.\",\"tag_icon\":\"mdi mdi-account\",\"tag\":\"Albert Lynn\",\"paragraph\":\"The most well-known dummy text is the Lorem Ipsum which is said to have originated.\",\"readmore\":\"Read More\",\"readmore_icon\":\"mdi mdi-arrow-right\"},{\"id\":2,\"image\":\"images/blog/blog-5.jpg\",\"heading\":\"Lorem ipsum dolor sit amet...\",\"tag_icon\":\"mdi mdi-account\",\"tag\":\"Terrence Roloff\",\"paragraph\":\"The most well-known dummy text is the Lorem Ipsum which is said to have originated.\",\"readmore\":\"Read More\",\"readmore_icon\":\"mdi mdi-arrow-right\"},{\"id\":3,\"image\":\"images/blog/blog-5.jpg\",\"heading\":\"Consectetuer adipiscing elit aenean commodo...\",\"tag_icon\":\"mdi mdi-account\",\"tag\":\"Karleen Hammond\",\"paragraph\":\"The most well-known dummy text is the Lorem Ipsum which is said to have originated.\",\"readmore\":\"Read More\",\"readmore_icon\":\"mdi mdi-arrow-right\"}]");
+
+/***/ }),
+
+/***/ "./src/js/data/faq.json":
+/*!******************************!*\
+  !*** ./src/js/data/faq.json ***!
+  \******************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":1,\"heading\":\"Is the Fake Name Generator illegal ?\",\"paragraph\":\"It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. One may speculate that over the course of time certain letters were added or deleted at various positions.\"},{\"id\":2,\"heading\":\"How do I get my user name and my password ?\",\"paragraph\":\"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classNameical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.\"},{\"id\":3,\"heading\":\"How can i get a money ?\",\"paragraph\":\"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,\"},{\"id\":4,\"heading\":\"How can i get a job ?\",\"paragraph\":\"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, fugiat iste nisi tempore nesciunt nemo fuga? Nesciunt, delectus laboriosam nisi repudiandae nam fuga saepe animi recusandae. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.\"},{\"id\":5,\"heading\":\"Is safe use Lorem Ipsum ?\",\"paragraph\":\"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.\"},{\"id\":6,\"heading\":\"How many variations exist ?\",\"paragraph\":\"Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.\"}]");
+
+/***/ }),
+
+/***/ "./src/js/data/footerHeader.json":
+/*!***************************************!*\
+  !*** ./src/js/data/footerHeader.json ***!
+  \***************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":1,\"menuName\":\"Home\"},{\"id\":2,\"menuName\":\"Features\"},{\"id\":3,\"menuName\":\"Services\"},{\"id\":4,\"menuName\":\"Client\"},{\"id\":5,\"menuName\":\"Team\"},{\"id\":6,\"menuName\":\"Blog\"},{\"id\":7,\"menuName\":\"Contact\"}]");
 
 /***/ }),
 
@@ -69096,6 +68785,61 @@ module.exports = JSON.parse("[{\"id\":1,\"title\":\"hello\"},{\"id\":2,\"title\"
 /***/ (function(module) {
 
 module.exports = JSON.parse("[{\"id\":2,\"menuName\":\"Home\"},{\"id\":3,\"menuName\":\"Features\"},{\"id\":4,\"menuName\":\"Services\"},{\"id\":5,\"menuName\":\"Team\"},{\"id\":6,\"menuName\":\"Pricing\"},{\"id\":7,\"menuName\":\"Faq\"},{\"id\":8,\"menuName\":\"Blog\"},{\"id\":9,\"menuName\":\"Contact\"}]");
+
+/***/ }),
+
+/***/ "./src/js/data/ourClient.json":
+/*!************************************!*\
+  !*** ./src/js/data/ourClient.json ***!
+  \************************************/
+/*! exports provided: 0, 1, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":1,\"paragraph\":\" Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex Ut ullamco laboris nisi ea commodo consequat.Ut ullamco laboris nisi ut aliquip ex ea commodo consequat. \",\"icon\":\"images/testi/testi-1.jpg\",\"name\":\"Keri Nicholas\",\"desination\":\"Designer\"},{\"id\":2,\"paragraph\":\" Auctor facilisi platea cum accumsan semper facilisis tristique. Ornare magnis tristique mauris, magna rutrum dignissim facilisis consequat congue fringilla nec hendrerit.\",\"icon\":\"images/testi/testi-1.jpg\",\"name\":\"Charle nathan\",\"desination\":\"Designer\"}]");
+
+/***/ }),
+
+/***/ "./src/js/data/price.json":
+/*!********************************!*\
+  !*** ./src/js/data/price.json ***!
+  \********************************/
+/*! exports provided: 0, 1, 2, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":1,\"heading\":\"FREE\",\"amount_type\":\"$\",\"amount_rupee\":\"9\",\"amount_month\":\"mo\",\"plan1\":\"50GB Disk Space\",\"plan2\":\"50 Email Accounts\",\"plan3\":\"High Speed Internet\",\"plan4\":\"10 Subdomains\",\"plan5\":\"50GB Monthly Bandwidth\",\"action\":\"Jion Now\"},{\"id\":2,\"heading\":\"Economy\",\"amount_type\":\"$\",\"amount_rupee\":\"29\",\"amount_month\":\"mo\",\"plan1\":\"100GB Disk Space\",\"plan2\":\"100 Email Accounts\",\"plan3\":\"High Speed Internet\",\"plan4\":\"20 Subdomains\",\"plan5\":\"100GB Monthly Bandwidth\",\"action\":\"Jion Now\"},{\"id\":3,\"heading\":\"Deluxe\",\"amount_type\":\"$\",\"amount_rupee\":\"9\",\"amount_month\":\"mo\",\"plan1\":\"2500GB Disk Space\",\"plan2\":\"210 Email Accounts\",\"plan3\":\"High Speed Internet\",\"plan4\":\"50 Subdomains\",\"plan5\":\"150GB Monthly Bandwidth\",\"action\":\"Jion Now\"}]");
+
+/***/ }),
+
+/***/ "./src/js/data/services.json":
+/*!***********************************!*\
+  !*** ./src/js/data/services.json ***!
+  \***********************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":1,\"icon\":\"pe-7s-photo-gallery\",\"heading\":\"Strategy Solutions\",\"paragraph\":\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.\"},{\"id\":2,\"icon\":\"pe-7s-helm\",\"heading\":\"UI/UX Design\",\"paragraph\":\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.\"},{\"id\":3,\"icon\":\"pe-7s-plane\",\"heading\":\"Branding Identity\",\"paragraph\":\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.\"},{\"id\":4,\"icon\":\"pe-7s-rocket\",\"heading\":\"Easy to Use\",\"paragraph\":\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.\"},{\"id\":5,\"icon\":\"pe-7s-target\",\"heading\":\"Dynamic Growth\",\"paragraph\":\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.\"},{\"id\":6,\"icon\":\"pe-7s-like2\",\"heading\":\"Friendly Support\",\"paragraph\":\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.\"}]");
+
+/***/ }),
+
+/***/ "./src/js/data/social.json":
+/*!*********************************!*\
+  !*** ./src/js/data/social.json ***!
+  \*********************************/
+/*! exports provided: 0, 1, 2, 3, 4, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":1,\"Social_icon\":\"mdi mdi-facebook\"},{\"id\":2,\"Social_icon\":\"mdi mdi-twitter\"},{\"id\":3,\"Social_icon\":\"mdi mdi-instagram\"},{\"id\":4,\"Social_icon\":\"mdi mdi-dribbble\"},{\"id\":5,\"Social_icon\":\"mdi mdi-google\"}]");
+
+/***/ }),
+
+/***/ "./src/js/data/team.json":
+/*!*******************************!*\
+  !*** ./src/js/data/team.json ***!
+  \*******************************/
+/*! exports provided: 0, 1, 2, 3, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":1,\"profile\":\"images/team/team-1.jpg\",\"name\":\"Robert McClanahan\",\"desination\":\"CEO/Founder\",\"facebook\":\"mdi mdi-facebook\",\"google+\":\"mdi mdi-google\",\"twitter\":\"mdi mdi-twitter\"},{\"id\":2,\"profile\":\"images/team/team-1.jpg\",\"name\":\"Diane Williams\",\"desination\":\"CTO/Co-Founder\",\"facebook\":\"mdi mdi-facebook\",\"google+\":\"mdi mdi-google\",\"twitter\":\"mdi mdi-twitter\"},{\"id\":3,\"profile\":\"images/team/team-1.jpg\",\"name\":\"Andrew Tomlinson\",\"desination\":\"Sr. Web Designer\",\"facebook\":\"mdi mdi-facebook\",\"google+\":\"mdi mdi-google\",\"twitter\":\"mdi mdi-twitter\"},{\"id\":4,\"profile\":\"images/team/team-1.jpg\",\"name\":\"James Miller\",\"desination\":\"Sr. Web Developer\",\"facebook\":\"mdi mdi-facebook\",\"google\":\"mdi mdi-google\",\"twitter\":\"mdi mdi-twitter\"}]");
 
 /***/ }),
 

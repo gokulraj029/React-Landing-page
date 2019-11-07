@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import OurClientData from '../data/ourClient.json'
 
 export default class OurClient extends Component {
     render() {
@@ -19,27 +20,21 @@ export default class OurClient extends Component {
                 </div>
 
                 <div className="row mt-5">
-                    <div className="col-lg-6">
-                        <div className="testimonial-box text-center pt-4 pb-4 pr-3 pl-3">
-                            <p className="pt-3 text-muted">" Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex Ut ullamco laboris nisi ea commodo consequat.Ut ullamco laboris nisi ut aliquip ex ea commodo consequat. " </p>
-                            <div className="testimonial-client-img text-center mb-3">
-                                <img src="images/testi/testi-1.jpg" className="img-fluid  rounded-circle img-thumbnail" />
+                    {OurClientData.map((clientData, index)=>{
+                        // alert(clientData)
+                        return(
+                            <div className="col-lg-6" key={index}>
+                                <div className="testimonial-box text-center pt-4 pb-4 pr-3 pl-3">
+                                    <p className="pt-3 text-muted">{clientData.paragraph} </p>
+                                    <div className="testimonial-client-img text-center mb-3">
+                                        <img src={`${clientData.icon}`} className="img-fluid  rounded-circle img-thumbnail" />
+                                    </div>
+                                    <h6 className="mb-0">{clientData.name}</h6>
+                                    <small>{clientData.desination}</small>
+                                </div>
                             </div>
-                            <h6 className="mb-0">Keri Nicholas</h6>
-                            <small>Designer</small>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-6">
-                        <div className="testimonial-box text-center pt-4 pb-4 pr-3 pl-3">
-                            <p className="pt-3 text-muted">" Auctor facilisi platea cum accumsan semper facilisis tristique. Ornare magnis tristique mauris, magna rutrum dignissim facilisis consequat congue fringilla nec hendrerit. " </p>
-                            <div className="testimonial-client-img mb-3">
-                                <img src="images/testi/testi-2.jpg" className="img-fluid  rounded-circle img-thumbnail" />
-                            </div>
-                            <h6 className="mb-0">Charle nathan</h6>
-                            <small>Designer</small>
-                        </div>
-                    </div>
+                        )
+                    })}
                 </div>
             </div>
         </section>

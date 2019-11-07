@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import OurTeamDtat from '../data/team.json'
 
 export default class Team extends Component {
     render() {
@@ -18,70 +19,26 @@ export default class Team extends Component {
                     </div>
                 </div>
                 <div className="row mt-4 pt-4">
-                    <div className="col-lg-3 mt-3">
-                        <div className="team-box p-4">
-                            <div className="team-img">
-                                <img src="images/team/team-1.jpg" alt="" className=" mx-auto d-block rounded-circle " height="130" />
+                    {OurTeamDtat.map((ourTeam, index)=>{
+                        return(
+                            <div className="col-lg-3 mt-3" key={index}>
+                                <div className="team-box p-4">
+                                    <div className="team-img">
+                                        <img src={`${ourTeam.profile}`} alt="" className=" mx-auto d-block rounded-circle " height="130" />
+                                    </div>
+                                    <div className="team-desc text-center mt-4">
+                                        <h6 className="team-name text-custom mb-1">{ourTeam.name}</h6>
+                                        <p className="team-work text-muted">{ourTeam.desination}</p>
+                                    </div>
+                                    <ul className="list-inline team-social mt-4 mb-0 text-center">
+                                        <li className="list-inline-item"><a href="#"><i className={`${ourTeam.facebook}`}></i></a></li>
+                                        <li className="list-inline-item"><a href="#"><i className={`${ourTeam.google}`}></i></a></li>
+                                        <li className="list-inline-item"><a href="#"><i className={`${ourTeam.twitter}`}></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div className="team-desc text-center mt-4">
-                                <h6 className="team-name text-custom mb-1">Robert McClanahan</h6>
-                                <p className="team-work text-muted">CEO/Founder</p>
-                            </div>
-                            <ul className="list-inline team-social mt-4 mb-0 text-center">
-                                <li className="list-inline-item"><a href="#"><i className="mdi mdi-facebook"></i></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="mdi mdi-google"></i></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="mdi mdi-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 mt-3">
-                        <div className="team-box p-4">
-                            <div className="team-img">
-                                <img src="images/team/team-2.jpg" alt="" className=" mx-auto d-block rounded-circle" height="130" />
-                            </div>
-                            <div className="team-desc text-center mt-4">
-                                <h6 className="team-name text-custom mb-1">Diane Williams</h6>
-                                <p className="team-work text-muted">CTO/Co-Founder</p>
-                            </div>
-                            <ul className="list-inline team-social mt-4 mb-0 text-center">
-                                <li className="list-inline-item"><a href="#"><i className="mdi mdi-facebook"></i></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="mdi mdi-google"></i></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="mdi mdi-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 mt-3">
-                        <div className="team-box p-4">
-                            <div className="team-img">
-                                <img src="images/team/team-3.jpg" alt="" className=" mx-auto d-block rounded-circle" height="130" />
-                            </div>
-                            <div className="team-desc text-center mt-4">
-                                <h6 className="team-name text-custom mb-1">Andrew Tomlinson</h6>
-                                <p className="team-work text-muted">Sr. Web Designer</p>
-                            </div>
-                            <ul className="list-inline team-social mt-4 mb-0 text-center">
-                                <li className="list-inline-item"><a href="#"><i className="mdi mdi-facebook"></i></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="mdi mdi-google"></i></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="mdi mdi-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 mt-3">
-                        <div className="team-box p-4">
-                            <div className="team-img">
-                                <img src="images/team/team-4.jpg" alt="" className=" mx-auto d-block rounded-circle" height="130" />
-                            </div>
-                            <div className="team-desc text-center mt-4">
-                                <h6 className="team-name text-custom mb-1">James Miller</h6>
-                                <p className="team-work text-muted">Sr. Web Developer</p>
-                            </div>
-                            <ul className="list-inline team-social mt-4 mb-0 text-center">
-                                <li className="list-inline-item"><a href="#"><i className="mdi mdi-facebook"></i></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="mdi mdi-google"></i></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="mdi mdi-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                        )
+                    })}
                 </div>
             </div>
         </section>

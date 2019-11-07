@@ -14,7 +14,7 @@
     },
     {
         "id" : 2,
-        "heading" : "",           
+        "heading" : "Economy",           
         "amount_type" : "$",        
         "amount_rupee" : "29",        
         "amount_month" : "mo",        
@@ -27,7 +27,7 @@
     },
     {
         "id" : 3,
-        "heading" : "",           
+        "heading" : "Deluxe",           
         "amount_type" : "$",        
         "amount_rupee" : "9",        
         "amount_month" : "mo",         
