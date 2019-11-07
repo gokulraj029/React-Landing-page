@@ -67791,6 +67791,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "list-unstyled text-center footerlink"
       }, _data_footerHeader_json__WEBPACK_IMPORTED_MODULE_2__.map(function (footerMenu, index) {
+        console.log(footerMenu);
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           className: "list-inline-item",
           key: index
