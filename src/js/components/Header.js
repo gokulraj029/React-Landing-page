@@ -9,6 +9,7 @@ class Header extends Component{
         <nav className="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
             <div className="container">
                 <a className="navbar-brand" href="#">Virus</a>
+                <a className="navbar-brand" href="bootatrap_component.html">Bootstrap Component</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="mdi mdi-menu"></span>
                 </button>

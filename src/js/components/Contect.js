@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-export default class Example extends Component {
+export default class Contect extends Component {
     render() {
         return (
         <section className="section" id="contact">
@@ -82,6 +82,6 @@ export default class Example extends Component {
     }
 }
 
-if (document.getElementById('example')) {
-    ReactDOM.render(<Example />, document.getElementById('example'));
+if (document.getElementById('contect')) {
+    ReactDOM.render(<Contect />, document.getElementById('contect'));
 }

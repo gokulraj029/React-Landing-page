@@ -26,6 +26,10 @@ require('./components/Fooder.js');
 require('./components/Backtotop.js');
 
 
+// Bootstrap Component
+
+require('./components/bootstrap/Button.js');
+
 // theme Import js 
 
 require('./themeone/app.js');
