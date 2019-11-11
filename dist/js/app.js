@@ -67794,7 +67794,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "list-unstyled text-center footerlink"
       }, _data_footerHeader_json__WEBPACK_IMPORTED_MODULE_2__.map(function (footerMenu, index) {
-        console.log(footerMenu);
+        // console.log(footerMenu);
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           className: "list-inline-item",
           key: index
@@ -68332,6 +68332,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_slider_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/slider.json */ "./src/js/data/slider.json");
+var _data_slider_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/slider.json */ "./src/js/data/slider.json", 1);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -68349,6 +68351,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -68380,106 +68383,44 @@ function (_Component) {
         "data-ride": "carousel"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "carousel-inner"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "carousel-item active",
-        style: {
-          backgroundImage: 'url(https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-150595123.jpg)'
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "bg-overlay"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "home-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "home-desc-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-12"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "text-center text-white"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: "home-small-title"
-      }, "This theme is fully customize"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "home-title mx-auto mt-4"
-      }, "A digital web studio creating stunning & engaging online experiences"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "home-subtitle mx-auto pt-4"
-      }, "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pt-5"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "btn btn-outline-custom btn-round"
-      }, "Contact Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "btn btn-custom btn-round m-3"
-      }, "Get Started"))))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "carousel-item",
-        style: {
-          backgroundImage: 'url(https://techcastle.com/wp-content/uploads/2019/06/how-to-prevent-computer-viruses.jpeg)'
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "bg-overlay"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "home-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "home-desc-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-12"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "text-center text-white"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: "home-small-title"
-      }, "This theme is fully customize"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "home-title mx-auto mt-4"
-      }, "We love make things amazing and simple"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "home-subtitle mx-auto pt-4"
-      }, "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pt-5"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "btn btn-outline-custom btn-round"
-      }, "Contact Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "btn btn-custom btn-round m-3"
-      }, "Get Started"))))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "carousel-item",
-        style: {
-          backgroundImage: 'url(https://images.idgesg.net/images/article/2019/07/cso_security_threat_virus_malicious_binary_code_bluebay2014_gettyimages-983223752_2400x1600-100801546-large.jpg)'
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "bg-overlay"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "home-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "home-desc-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-lg-12"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "text-center text-white"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: "home-small-title"
-      }, "This theme is fully customize"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "home-title mx-auto mt-4"
-      }, "Clean & Professional Multipurpose Landing Page"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "home-subtitle mx-auto pt-4"
-      }, "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pt-5"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "btn btn-outline-custom btn-round"
-      }, "Contact Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        className: "btn btn-custom btn-round m-3"
-      }, "Get Started")))))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, _data_slider_json__WEBPACK_IMPORTED_MODULE_2__.map(function (sliderData, index) {
+        console.log(sliderData);
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: index === 0 ? 'carousel-item active' : 'carousel-item',
+          key: index,
+          style: {
+            backgroundImage: 'url(https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-150595123.jpg)'
+          }
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "bg-overlay"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "home-center"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "home-desc-center"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "container"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "row"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "col-lg-12"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "text-center text-white"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+          className: "home-small-title"
+        }, sliderData.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+          className: "home-title mx-auto mt-4"
+        }, sliderData.subtitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "home-subtitle mx-auto pt-4"
+        }, sliderData.paragraph), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "pt-5"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#",
+          className: "btn btn-outline-custom btn-round"
+        }, sliderData.contact), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#",
+          className: "btn btn-custom btn-round m-3"
+        }, sliderData.start)))))))));
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "carousel-control-prev",
         href: "#carouselExampleControls",
         role: "button",
@@ -68903,6 +68844,17 @@ module.exports = JSON.parse("[{\"id\":1,\"heading\":\"FREE\",\"amount_type\":\"$
 /***/ (function(module) {
 
 module.exports = JSON.parse("[{\"id\":1,\"icon\":\"pe-7s-photo-gallery\",\"heading\":\"Strategy Solutions\",\"paragraph\":\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.\"},{\"id\":2,\"icon\":\"pe-7s-helm\",\"heading\":\"UI/UX Design\",\"paragraph\":\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.\"},{\"id\":3,\"icon\":\"pe-7s-plane\",\"heading\":\"Branding Identity\",\"paragraph\":\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.\"},{\"id\":4,\"icon\":\"pe-7s-rocket\",\"heading\":\"Easy to Use\",\"paragraph\":\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.\"},{\"id\":5,\"icon\":\"pe-7s-target\",\"heading\":\"Dynamic Growth\",\"paragraph\":\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.\"},{\"id\":6,\"icon\":\"pe-7s-like2\",\"heading\":\"Friendly Support\",\"paragraph\":\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque inventore.\"}]");
+
+/***/ }),
+
+/***/ "./src/js/data/slider.json":
+/*!*********************************!*\
+  !*** ./src/js/data/slider.json ***!
+  \*********************************/
+/*! exports provided: 0, 1, 2, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":1,\"image\":\"https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-150595123.jpg\",\"title\":\"This theme is fully customize\",\"subtitle\":\"A digital web studio creating stunning & engaging online experiences\",\"paragraph\":\"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.\",\"contact\":\"Contact Us\",\"start\":\"Get Started\"},{\"id\":2,\"image\":\"https://techcastle.com/wp-content/uploads/2019/06/how-to-prevent-computer-viruses.jpeg\",\"title\":\"This theme is fully customize\",\"subtitle\":\"A digital web studio creating stunning & engaging online experiences\",\"paragraph\":\"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.\",\"contact\":\"Contact Us\",\"start\":\"Get Started\"},{\"id\":3,\"image\":\"https://images.idgesg.net/images/article/2019/07/cso_security_threat_virus_malicious_binary_code_bluebay2014_gettyimages-983223752_2400x1600-100801546-large.jpg\",\"title\":\"This theme is fully customize\",\"subtitle\":\"A digital web studio creating stunning & engaging online experiences\",\"paragraph\":\"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.\",\"contact\":\"Contact Us\",\"start\":\"Get Started\"}]");
 
 /***/ }),
 

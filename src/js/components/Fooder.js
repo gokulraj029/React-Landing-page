@@ -13,7 +13,7 @@ export default class Fooder extends Component {
                         <div className="footer-content">
                             <ul className="list-unstyled text-center footerlink">
                                 {OurFooterMenu.map((footerMenu, index) => {
-                                    console.log(footerMenu);
+                                    // console.log(footerMenu);
                                     return(
                                         <li className="list-inline-item" key={index}><a href="#">{footerMenu.menuName}</a></li>
                                     )
