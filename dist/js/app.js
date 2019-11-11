@@ -68384,12 +68384,12 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "carousel-inner"
       }, _data_slider_json__WEBPACK_IMPORTED_MODULE_2__.map(function (sliderData, index) {
-        console.log(sliderData);
+        console.log(sliderData.image);
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: index === 0 ? 'carousel-item active' : 'carousel-item',
           key: index,
           style: {
-            backgroundImage: 'url(https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-150595123.jpg)'
+            backgroundImage: "url(".concat(sliderData.image, ")")
           }
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "bg-overlay"

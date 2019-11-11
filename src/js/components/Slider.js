@@ -10,9 +10,9 @@ class Slider extends Component{
                     <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                         <div className="carousel-inner">
                             {SliderServiceData.map((sliderData, index) => {
-                                console.log(sliderData);
+                                console.log(sliderData.image);
                                 return(
-                                    <div className={index === 0 ? 'carousel-item active' : 'carousel-item'} key={index} style={{ backgroundImage: 'url(https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-150595123.jpg)' }} >
+                                    <div className={index === 0 ? 'carousel-item active' : 'carousel-item'} key={index} style={{backgroundImage: `url(${sliderData.image})` }}>
                                         <div className="bg-overlay"></div>
                                         <div className="home-center">
                                             <div className="home-desc-center">
