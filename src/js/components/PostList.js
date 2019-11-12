@@ -31,7 +31,7 @@ export default class PostData extends Component {
                 <h1>List Of Post Data</h1>
             {
                 posts.length ?
-                posts.map(post => <div key={post.id}>{post.title}</div>) : null
+                posts.map(post => <div key={post.id}>{post.title} {post.userId}</div>) : null
             }
             </div>
         );
