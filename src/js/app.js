@@ -24,7 +24,7 @@ require('./components/Blog.js');
 require('./components/Contect.js');
 require('./components/Fooder.js');
 require('./components/Backtotop.js');
-
+require('./components/PostList.js');
 
 // Bootstrap Component
 
