@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 
-export default class PostData extends Component {
+export default class PostDataList extends Component {
 
         constructor(props){
             super(props)
@@ -14,11 +14,11 @@ export default class PostData extends Component {
         componentDidMount(){
             axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(Response => {
-                console.log(Response)
+                // console.log(Response)
                 this.setState({posts: Response.data})
             })
             .catch(error => {
-                console.log(error)
+                // console.log(error)
             })
         }
 
@@ -38,6 +38,6 @@ export default class PostData extends Component {
     }
 }
 
-if (document.getElementById('postdata')) {
-    ReactDOM.render(<PostData />, document.getElementById('postdata'));
+if (document.getElementById('postdatalist')) {
+    ReactDOM.render(<PostDataList />, document.getElementById('postdatalist'));
 }

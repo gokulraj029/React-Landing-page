@@ -68831,7 +68831,9 @@ __webpack_require__(/*! ./components/Fooder.js */ "./src/js/components/Fooder.js
 
 __webpack_require__(/*! ./components/Backtotop.js */ "./src/js/components/Backtotop.js");
 
-__webpack_require__(/*! ./components/PostList.js */ "./src/js/components/PostList.js"); // Bootstrap Component
+__webpack_require__(/*! ./components/PostList.js */ "./src/js/components/PostList.js");
+
+__webpack_require__(/*! ./components/PostData.js */ "./src/js/components/PostData.js"); // Bootstrap Component
 
 
 __webpack_require__(/*! ./components/bootstrap/Button.js */ "./src/js/components/bootstrap/Button.js"); // theme Import js 
@@ -70072,9 +70074,9 @@ if (document.getElementById('ourclient')) {
 
 /***/ }),
 
-/***/ "./src/js/components/PostList.js":
+/***/ "./src/js/components/PostData.js":
 /*!***************************************!*\
-  !*** ./src/js/components/PostList.js ***!
+  !*** ./src/js/components/PostData.js ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -70122,7 +70124,8 @@ function (_Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(PostData).call(this, props));
     _this.state = {
-      posts: []
+      posted: [],
+      errorMsg: ''
     };
     return _this;
   }
@@ -70132,14 +70135,114 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('https://jsonplaceholder.typicode.com/posts').then(function (Response) {
-        console.log(Response);
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('https://jsonplaceholder.typicode.com/posts-1').then(function (Response) {
+        console.log(Response.data);
 
         _this2.setState({
-          posts: Response.data
+          posted: Response.data
         });
       })["catch"](function (error) {
         console.log(error);
+
+        _this2.setState({
+          errorMsg: 'Error Reterive Data'
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$state = this.state,
+          posted = _this$state.posted,
+          errorMsg = _this$state.errorMsg;
+      console.log(this.state);
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "List Of Post Data"), posted.length ? posted.map(function (datapost) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: datapost.id
+        }, datapost.title);
+      }) : null, errorMsg ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-danger"
+      }, errorMsg) : null);
+    }
+  }]);
+
+  return PostData;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+if (document.getElementById('postdata')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostData, null), document.getElementById('postdata'));
+}
+
+/***/ }),
+
+/***/ "./src/js/components/PostList.js":
+/*!***************************************!*\
+  !*** ./src/js/components/PostList.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PostDataList; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var PostDataList =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(PostDataList, _Component);
+
+  function PostDataList(props) {
+    var _this;
+
+    _classCallCheck(this, PostDataList);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(PostDataList).call(this, props));
+    _this.state = {
+      posts: []
+    };
+    return _this;
+  }
+
+  _createClass(PostDataList, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('https://jsonplaceholder.typicode.com/posts').then(function (Response) {
+        // console.log(Response)
+        _this2.setState({
+          posts: Response.data
+        });
+      })["catch"](function (error) {// console.log(error)
       });
     }
   }, {
@@ -70155,13 +70258,13 @@ function (_Component) {
     }
   }]);
 
-  return PostData;
+  return PostDataList;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
 
-if (document.getElementById('postdata')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostData, null), document.getElementById('postdata'));
+if (document.getElementById('postdatalist')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostDataList, null), document.getElementById('postdatalist'));
 }
 
 /***/ }),
