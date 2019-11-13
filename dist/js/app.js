@@ -68833,7 +68833,9 @@ __webpack_require__(/*! ./components/Backtotop.js */ "./src/js/components/Backto
 
 __webpack_require__(/*! ./components/PostList.js */ "./src/js/components/PostList.js");
 
-__webpack_require__(/*! ./components/PostData.js */ "./src/js/components/PostData.js"); // Bootstrap Component
+__webpack_require__(/*! ./components/PostData.js */ "./src/js/components/PostData.js");
+
+__webpack_require__(/*! ./components/PostForm.js */ "./src/js/components/PostForm.js"); // Bootstrap Component
 
 
 __webpack_require__(/*! ./components/bootstrap/Button.js */ "./src/js/components/bootstrap/Button.js"); // theme Import js 
@@ -70156,7 +70158,7 @@ function (_Component) {
           posted = _this$state.posted,
           errorMsg = _this$state.errorMsg;
       console.log(this.state);
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "List Of Post Data"), posted.length ? posted.map(function (datapost) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Rest API Error Handel "), posted.length ? posted.map(function (datapost) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           key: datapost.id
         }, datapost.title);
@@ -70174,6 +70176,17 @@ function (_Component) {
 if (document.getElementById('postdata')) {
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostData, null), document.getElementById('postdata'));
 }
+
+/***/ }),
+
+/***/ "./src/js/components/PostForm.js":
+/*!***************************************!*\
+  !*** ./src/js/components/PostForm.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /media/gokul/133707A451C197AB/test/React-Landing-page/src/js/components/PostForm.js: Support for the experimental syntax 'classProperties' isn't currently enabled (15:16):\n\n\u001b[0m \u001b[90m 13 | \u001b[39m    }\u001b[0m\n\u001b[0m \u001b[90m 14 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 | \u001b[39m\tchangeHandler \u001b[33m=\u001b[39m e \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m\t              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 | \u001b[39m\t\t\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msetState({ [e\u001b[33m.\u001b[39mtarget\u001b[33m.\u001b[39mname]\u001b[33m:\u001b[39m e\u001b[33m.\u001b[39mtarget\u001b[33m.\u001b[39mvalue })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 | \u001b[39m\t}\u001b[0m\n\u001b[0m \u001b[90m 18 | \u001b[39m\u001b[0m\n\nAdd @babel/plugin-proposal-class-properties (https://git.io/vb4SL) to the 'plugins' section of your Babel config to enable transformation.\n    at Object.raise (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:6930:17)\n    at Object.expectPlugin (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:8328:18)\n    at Object.parseClassProperty (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11617:12)\n    at Object.pushClassProperty (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11582:30)\n    at Object.parseClassMemberWithIsStatic (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11516:14)\n    at Object.parseClassMember (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11453:10)\n    at /media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11408:14\n    at Object.withTopicForbiddingContext (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:10486:14)\n    at Object.parseClassBody (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11385:10)\n    at Object.parseClass (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11359:22)\n    at Object.parseExportDefaultExpression (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11779:19)\n    at Object.parseExport (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11692:31)\n    at Object.parseStatementContent (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:10715:27)\n    at Object.parseStatement (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:10611:17)\n    at Object.parseBlockOrModuleBlockBody (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11187:25)\n    at Object.parseBlockBody (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11174:10)\n    at Object.parseTopLevel (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:10542:10)\n    at Object.parse (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:12051:10)\n    at parse (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:12102:38)\n    at parser (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/core/lib/transformation/normalize-file.js:168:34)\n    at normalizeFile (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/core/lib/transformation/normalize-file.js:102:11)\n    at runSync (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/core/lib/transformation/index.js:44:43)\n    at runAsync (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/core/lib/transformation/index.js:35:14)\n    at /media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/core/lib/transform.js:34:34\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
 
 /***/ }),
 

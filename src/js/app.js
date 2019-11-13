@@ -26,6 +26,7 @@ require('./components/Fooder.js');
 require('./components/Backtotop.js');
 require('./components/PostList.js');
 require('./components/PostData.js');
+require('./components/PostForm.js');
 
 // Bootstrap Component
 

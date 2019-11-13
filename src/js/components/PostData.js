@@ -30,7 +30,7 @@ render() {
     console.log(this.state)
     return (
         <div>
-            <h1>List Of Post Data</h1>
+            <h1>Rest API Error Handel </h1>
             {
                 posted.length ?
             posted.map(datapost => <div key={datapost.id}>{datapost.title}</div>) : null
