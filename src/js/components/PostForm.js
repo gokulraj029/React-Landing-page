@@ -12,14 +12,24 @@ export default class PostForm extends Component{
         }
     }
 
-	changeHandler = e => {
-		this.setState({ [e.target.name]: e.target.value });
+	changeHandler(e){
+        this.setState({ [e.target.name]: e.target.value });
 	}
 
-	submitHandler = e => {
+	submitHandler(e){
 		e.preventDefault()
-		console.log(this.state)
+		console.log("State =" + this.state)
     }
+    
+    
+	// changeHandler = e => {
+	// 	this.setState({ [e.target.name]: e.target.value });
+	// }
+
+	// submitHandler = e => {
+	// 	e.preventDefault()
+	// 	console.log(this.state)
+    // }
     
     render() {
         const {userId, title, body } = this.state

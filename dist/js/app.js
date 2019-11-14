@@ -70183,10 +70183,136 @@ if (document.getElementById('postdata')) {
 /*!***************************************!*\
   !*** ./src/js/components/PostForm.js ***!
   \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /media/gokul/133707A451C197AB/test/React-Landing-page/src/js/components/PostForm.js: Support for the experimental syntax 'classProperties' isn't currently enabled (15:16):\n\n\u001b[0m \u001b[90m 13 | \u001b[39m    }\u001b[0m\n\u001b[0m \u001b[90m 14 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 | \u001b[39m\tchangeHandler \u001b[33m=\u001b[39m e \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m\t              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 | \u001b[39m\t\t\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msetState({ [e\u001b[33m.\u001b[39mtarget\u001b[33m.\u001b[39mname]\u001b[33m:\u001b[39m e\u001b[33m.\u001b[39mtarget\u001b[33m.\u001b[39mvalue })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 | \u001b[39m\t}\u001b[0m\n\u001b[0m \u001b[90m 18 | \u001b[39m\u001b[0m\n\nAdd @babel/plugin-proposal-class-properties (https://git.io/vb4SL) to the 'plugins' section of your Babel config to enable transformation.\n    at Object.raise (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:6930:17)\n    at Object.expectPlugin (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:8328:18)\n    at Object.parseClassProperty (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11617:12)\n    at Object.pushClassProperty (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11582:30)\n    at Object.parseClassMemberWithIsStatic (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11516:14)\n    at Object.parseClassMember (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11453:10)\n    at /media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11408:14\n    at Object.withTopicForbiddingContext (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:10486:14)\n    at Object.parseClassBody (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11385:10)\n    at Object.parseClass (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11359:22)\n    at Object.parseExportDefaultExpression (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11779:19)\n    at Object.parseExport (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11692:31)\n    at Object.parseStatementContent (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:10715:27)\n    at Object.parseStatement (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:10611:17)\n    at Object.parseBlockOrModuleBlockBody (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11187:25)\n    at Object.parseBlockBody (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:11174:10)\n    at Object.parseTopLevel (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:10542:10)\n    at Object.parse (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:12051:10)\n    at parse (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/parser/lib/index.js:12102:38)\n    at parser (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/core/lib/transformation/normalize-file.js:168:34)\n    at normalizeFile (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/core/lib/transformation/normalize-file.js:102:11)\n    at runSync (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/core/lib/transformation/index.js:44:43)\n    at runAsync (/media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/core/lib/transformation/index.js:35:14)\n    at /media/gokul/133707A451C197AB/test/React-Landing-page/node_modules/@babel/core/lib/transform.js:34:34\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PostForm; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var PostForm =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(PostForm, _Component);
+
+  function PostForm(props) {
+    var _this;
+
+    _classCallCheck(this, PostForm);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(PostForm).call(this, props));
+    _this.state = {
+      userId: '',
+      title: '',
+      body: ''
+    };
+    return _this;
+  }
+
+  _createClass(PostForm, [{
+    key: "changeHandler",
+    value: function changeHandler(e) {
+      this.setState(_defineProperty({}, e.target.name, e.target.value));
+    }
+  }, {
+    key: "submitHandler",
+    value: function submitHandler(e) {
+      e.preventDefault();
+      console.log("State =" + this.state);
+    } // changeHandler = e => {
+    // 	this.setState({ [e.target.name]: e.target.value });
+    // }
+    // submitHandler = e => {
+    // 	e.preventDefault()
+    // 	console.log(this.state)
+    // }
+
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$state = this.state,
+          userId = _this$state.userId,
+          title = _this$state.title,
+          body = _this$state.body;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Post Form Data To Rest API "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        onSubmit: this.submitHandler
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        "for": "userID"
+      }, "User ID"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        className: "form-control",
+        onChange: this.changeHandler,
+        value: userId,
+        name: "userId",
+        id: "userID",
+        placeholder: "Enter User id"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        "for": "title"
+      }, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        className: "form-control",
+        onChange: this.changeHandler,
+        value: title,
+        name: "title",
+        id: "title",
+        placeholder: "Enter Title"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        "for": "Body"
+      }, "Body"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        className: "form-control",
+        onChange: this.changeHandler,
+        value: body,
+        name: "body",
+        id: "Body",
+        placeholder: "Enter Body"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "submit",
+        className: "btn btn-primary"
+      }, "Submit")));
+    }
+  }]);
+
+  return PostForm;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+if (document.getElementById('postform')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostForm, null), document.getElementById('postform'));
+}
 
 /***/ }),
 
