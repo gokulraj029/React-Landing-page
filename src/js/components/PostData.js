@@ -19,7 +19,7 @@ export default class PostData extends Component {
             this.setState({posted: Response.data})
         })
         .catch(error => {
-            console.log(error)
+            // console.log(error)
             this.setState({errorMsg: 'Error Reterive Data'})
         })
     }
@@ -27,7 +27,7 @@ export default class PostData extends Component {
 render() {
 
     const {posted, errorMsg} = this.state
-    console.log(this.state)
+    // console.log(this.state)
     return (
         <div>
             <h1>Rest API Error Handel </h1>
