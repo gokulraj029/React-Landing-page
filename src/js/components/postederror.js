@@ -8,19 +8,20 @@ export default class PostForm extends Component {
     constructor(props){
         super(props);
         this.state={
-            userId : ''
+            userId : '',
+            title : '',
+            body : ''
         };
     }
 
 	changeHandler(e){
-        // console.log("hello")
-        e.preventDefault()
-        this.setState({ userId: e.target.value });
+        console.log("hello")
+        this.setState({ [e.target.name]: e.target.value });
 	}
 
 	submitHandler(e){
 		e.preventDefault()
-		console.log("State =" + this.state.userId)
+		console.log("State =" + this.state)
     }
    
     // Error function handel 
@@ -41,10 +42,10 @@ render() {
     return (
         <div>
             <h1>Post Form Data To Rest API </h1>
-            <form onSubmit={this.submitHandler.bind(this)}> 
+            <form onSubmit={this.submitHandler}> 
                 <div className="form-group">
                     <label>User ID</label>
-                    <input type="text" className="form-control" onChange={this.changeHandler.bind(this)} value={userId} name="userId" id="userID"  placeholder="Enter User id" />
+                    <input type="text" className="form-control" onChange={this.changeHandler} value={userId} name="userId" id="userID"  placeholder="Enter User id" />
                 </div>
                 <div className="form-group">
                     <label>Title</label>

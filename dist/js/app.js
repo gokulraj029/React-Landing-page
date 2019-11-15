@@ -70148,8 +70148,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -70182,9 +70180,7 @@ function (_Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(PostForm).call(this, props));
     _this.state = {
-      userId: '',
-      title: '',
-      body: ''
+      userId: ''
     };
     return _this;
   }
@@ -70192,14 +70188,17 @@ function (_Component) {
   _createClass(PostForm, [{
     key: "changeHandler",
     value: function changeHandler(e) {
-      console.log("hello");
-      this.setState(_defineProperty({}, e.target.name, e.target.value));
+      // console.log("hello")
+      e.preventDefault();
+      this.setState({
+        userId: e.target.value
+      });
     }
   }, {
     key: "submitHandler",
     value: function submitHandler(e) {
       e.preventDefault();
-      console.log("State =" + this.state);
+      console.log("State =" + this.state.userId);
     } // Error function handel 
     // changeHandler = e => {
     // 	this.setState({ [e.target.name]: e.target.value });
@@ -70217,13 +70216,13 @@ function (_Component) {
           title = _this$state.title,
           body = _this$state.body;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Post Form Data To Rest API "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        onSubmit: this.submitHandler
+        onSubmit: this.submitHandler.bind(this)
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "User ID"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         className: "form-control",
-        onChange: this.changeHandler,
+        onChange: this.changeHandler.bind(this),
         value: userId,
         name: "userId",
         id: "userID",
