@@ -68788,7 +68788,11 @@ __webpack_require__(/*! ./components/PostData.js */ "./src/js/components/PostDat
 
 __webpack_require__(/*! ./components/PostForm.js */ "./src/js/components/PostForm.js");
 
-__webpack_require__(/*! ./components/LocalStorage.js */ "./src/js/components/LocalStorage.js"); // Bootstrap Component
+__webpack_require__(/*! ./components/LocalStorage.js */ "./src/js/components/LocalStorage.js");
+
+__webpack_require__(/*! ./components/ImageUpload.js */ "./src/js/components/ImageUpload.js");
+
+__webpack_require__(/*! ./config/Config.js */ "./src/js/config/Config.js"); // Bootstrap Component
 
 
 __webpack_require__(/*! ./components/bootstrap/Button.js */ "./src/js/components/bootstrap/Button.js"); // theme Import js 
@@ -69927,6 +69931,117 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_
 
 /***/ }),
 
+/***/ "./src/js/components/ImageUpload.js":
+/*!******************************************!*\
+  !*** ./src/js/components/ImageUpload.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ImageUpload; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var ImageUpload =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ImageUpload, _Component);
+
+  function ImageUpload(props) {
+    var _this;
+
+    _classCallCheck(this, ImageUpload);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(ImageUpload).call(this, props));
+    _this.state = {
+      selectFile: ''
+    };
+    return _this;
+  }
+
+  _createClass(ImageUpload, [{
+    key: "fileSelectHandler",
+    value: function fileSelectHandler(e) {
+      console.log(e.target.files[0]);
+      this.setState({
+        file: e.target.files[0]
+      }); // this.setState({ selectFile : e.target.files[0] });
+      // this.setState({ [e.target.name]: e.target.files });
+
+      console.log("hello" + this.setState);
+    }
+  }, {
+    key: "fileUploadHandler",
+    value: function fileUploadHandler(e) {
+      e.preventDefault();
+      var fb = new FormData();
+      fb.append('image', this.state.selectFile, this.state.selectFile.name);
+      console.log(fb); // axios.post('https://jsonplaceholder.typicode.com/posts', fb)
+      // .then(response =>{
+      //     console.log(response)
+      // })
+      // .catch(error => {e
+      //     console.log(error)
+      // })
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var selectFile = this.state.selectFile;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Image Upload To Rest API "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Image upload"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "file",
+        onChange: this.fileSelectHandler.bind(this),
+        className: "form-control",
+        name: "selectFile",
+        id: "selectFile"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.fileUploadHandler,
+        type: "submit",
+        className: "btn btn-primary"
+      }, "Submit")));
+    }
+  }]);
+
+  return ImageUpload;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+if (document.getElementById('imageupload')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImageUpload, null), document.getElementById('imageupload'));
+}
+
+/***/ }),
+
 /***/ "./src/js/components/LocalStorage.js":
 /*!*******************************************!*\
   !*** ./src/js/components/LocalStorage.js ***!
@@ -69992,8 +70107,7 @@ function (_Component) {
     value: function getData() {
       // let data = localStorage.getItem('myData');
       var data = localStorage.getItem('mySessionStorageData');
-      data = JSON.parse(data);
-      console.log(data);
+      data = JSON.parse(data); // console.log(data)
     }
   }, {
     key: "render",
@@ -71099,6 +71213,24 @@ function (_Component) {
 if (document.getElementById('button')) {
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, null), document.getElementById('button'));
 }
+
+/***/ }),
+
+/***/ "./src/js/config/Config.js":
+/*!*********************************!*\
+  !*** ./src/js/config/Config.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ __webpack_exports__["default"] = (axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
+  baseURL: 'http://jsonplaceholder.typicode.com/'
+}));
 
 /***/ }),
 

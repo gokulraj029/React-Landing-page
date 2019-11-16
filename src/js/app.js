@@ -28,6 +28,8 @@ require('./components/PostList.js');
 require('./components/PostData.js');
 require('./components/PostForm.js');
 require('./components/LocalStorage.js');
+require('./components/ImageUpload.js');
+require('./config/Config.js');
 
 // Bootstrap Component
 

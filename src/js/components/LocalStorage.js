@@ -19,7 +19,7 @@ export default class LocalStorage extends Component {
         // let data = localStorage.getItem('myData');
         let data = localStorage.getItem('mySessionStorageData');
         data = JSON.parse(data);
-        console.log(data)
+        // console.log(data)
     }
 
     render() {
