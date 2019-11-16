@@ -27,7 +27,7 @@ require('./components/Backtotop.js');
 require('./components/PostList.js');
 require('./components/PostData.js');
 require('./components/PostForm.js');
-// require('./components/Form.js');
+require('./components/LocalStorage.js');
 
 // Bootstrap Component
 
