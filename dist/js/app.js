@@ -68750,6 +68750,8 @@ module.exports = function(module) {
 __webpack_require__(/*! ./bootstrap */ "./src/js/bootstrap.js"); // Html Import
 
 
+__webpack_require__(/*! ./config/Config.js */ "./src/js/config/Config.js");
+
 __webpack_require__(/*! ./components/Example.js */ "./src/js/components/Example.js");
 
 __webpack_require__(/*! ./components/Header.js */ "./src/js/components/Header.js");
@@ -70500,8 +70502,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _config_Config_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config/Config.js */ "./src/js/config/Config.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -70546,7 +70547,7 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('https://jsonplaceholder.typicode.com/posts').then(function (Response) {
+      _config_Config_js__WEBPACK_IMPORTED_MODULE_2__["default"].get('posts').then(function (Response) {
         // console.log(Response)
         _this2.setState({
           posts: Response.data
@@ -71229,7 +71230,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["default"] = (axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
-  baseURL: 'http://jsonplaceholder.typicode.com/'
+  baseURL: 'https://jsonplaceholder.typicode.com/'
 }));
 
 /***/ }),

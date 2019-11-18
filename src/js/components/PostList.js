@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import axios from 'axios';
+import Api from '../config/Config.js';
 
 export default class PostDataList extends Component {
 
@@ -12,7 +12,7 @@ export default class PostDataList extends Component {
         }
 
         componentDidMount(){
-            axios.get('https://jsonplaceholder.typicode.com/posts')
+            Api.get('posts')
             .then(Response => {
                 // console.log(Response)
                 this.setState({posts: Response.data})
