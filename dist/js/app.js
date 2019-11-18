@@ -68794,7 +68794,8 @@ __webpack_require__(/*! ./components/LocalStorage.js */ "./src/js/components/Loc
 
 __webpack_require__(/*! ./components/ImageUpload.js */ "./src/js/components/ImageUpload.js");
 
-__webpack_require__(/*! ./config/Config.js */ "./src/js/config/Config.js"); // Bootstrap Component
+__webpack_require__(/*! ./config/Config.js */ "./src/js/config/Config.js"); // require('./components/FileUpload.js');
+// Bootstrap Component
 
 
 __webpack_require__(/*! ./components/bootstrap/Button.js */ "./src/js/components/bootstrap/Button.js"); // theme Import js 
@@ -69947,8 +69948,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _config_Config_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config/Config.js */ "./src/js/config/Config.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -69983,7 +69983,8 @@ function (_Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(ImageUpload).call(this, props));
     _this.state = {
-      selectFile: ''
+      file: '',
+      imagePreviewUrl: ''
     };
     return _this;
   }
@@ -69991,32 +69992,68 @@ function (_Component) {
   _createClass(ImageUpload, [{
     key: "fileSelectHandler",
     value: function fileSelectHandler(e) {
-      console.log(e.target.files[0]);
-      this.setState({
-        file: e.target.files[0]
-      }); // this.setState({ selectFile : e.target.files[0] });
-      // this.setState({ [e.target.name]: e.target.files });
+      var _this2 = this;
 
-      console.log("hello" + this.setState);
+      e.preventDefault(); // console.log(e.target.files[0]);
+      // this.setState({ file: e.target.files[0] });
+      // this.setState({ selectFile : e.target.files[0] });
+      // this.setState({ [e.target.name]: e.target.files });
+      //  console.log("hello" + this.setState)
+
+      var reader = new FileReader();
+      var file = e.target.files[0];
+
+      reader.onloadend = function () {
+        _this2.setState({
+          file: file,
+          imagePreviewUrl: reader.result
+        });
+      };
+
+      reader.readAsDataURL(file);
     }
   }, {
     key: "fileUploadHandler",
     value: function fileUploadHandler(e) {
-      e.preventDefault();
-      var fb = new FormData();
-      fb.append('image', this.state.selectFile, this.state.selectFile.name);
-      console.log(fb); // axios.post('https://jsonplaceholder.typicode.com/posts', fb)
+      // e.preventDefault()
+      // var fb = new FormData();
+      // fb.append('image', this.state.selectFile, this.state.selectFile.name);
+      // console.log(fb)
+      // axios.post('https://jsonplaceholder.typicode.com/posts', fb)
       // .then(response =>{
       //     console.log(response)
       // })
       // .catch(error => {e
       //     console.log(error)
       // })
+      e.preventDefault(); // TODO: do something with -> this.state.file
+
+      console.log('handle uploading-', this.state.file);
+      _config_Config_js__WEBPACK_IMPORTED_MODULE_2__["default"].post('posts', this.state.file).then(function (response) {
+        console.log(response);
+      })["catch"](function (error) {
+        e;
+        console.log(error);
+      });
     }
   }, {
     key: "render",
     value: function render() {
-      var selectFile = this.state.selectFile;
+      var _this3 = this;
+
+      var imagePreviewUrl = this.state.imagePreviewUrl;
+      var $imagePreview = null;
+
+      if (imagePreviewUrl) {
+        $imagePreview = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: imagePreviewUrl
+        });
+      } else {
+        $imagePreview = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "previewText"
+        }, "Please select an Image for Preview");
+      }
+
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Image Upload To Rest API "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Image upload"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -70026,10 +70063,14 @@ function (_Component) {
         name: "selectFile",
         id: "selectFile"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        onClick: this.fileUploadHandler,
+        onClick: function onClick(e) {
+          return _this3.fileUploadHandler(e);
+        },
         type: "submit",
         className: "btn btn-primary"
-      }, "Submit")));
+      }, "Submit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "imgPreview"
+      }, $imagePreview));
     }
   }]);
 
@@ -70410,6 +70451,7 @@ function (_Component) {
       // two way binding 
 
       this.setState(_defineProperty({}, e.target.name, e.target.value)); // console.log("State User =" + this.state.userId, "State Title =" + this.state.title, "State Body =" + this.state.body)
+      // console.log("hello000000" + this.setState)
     }
   }, {
     key: "submitHandler",

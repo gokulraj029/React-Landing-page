@@ -20,7 +20,8 @@ export default class PostForm extends Component {
         // this.setState({ userId: e.target.value, title: e.target.value, body: e.target.value });
         // two way binding 
         this.setState({ [e.target.name]: e.target.value });
-		// console.log("State User =" + this.state.userId, "State Title =" + this.state.title, "State Body =" + this.state.body)
+        // console.log("State User =" + this.state.userId, "State Title =" + this.state.title, "State Body =" + this.state.body)
+        // console.log("hello000000" + this.setState)
 
 	}
 

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import axios from 'axios';
+import Api from '../config/Config.js';
 
 export default class ImageUpload extends Component {
 
@@ -9,24 +9,38 @@ export default class ImageUpload extends Component {
     constructor(props){
         super(props);
         this.state={
-            selectFile : ''
+            file : '',
+            imagePreviewUrl: ''
         };
     }
 
     fileSelectHandler(e){
-        console.log(e.target.files[0]);
-        this.setState({ file: e.target.files[0] });
+        e.preventDefault();
+        // console.log(e.target.files[0]);
+        // this.setState({ file: e.target.files[0] });
         // this.setState({ selectFile : e.target.files[0] });
         // this.setState({ [e.target.name]: e.target.files });
-         console.log("hello" + this.setState)
+        //  console.log("hello" + this.setState)
+
+        let reader = new FileReader();
+        let file = e.target.files[0];
+
+        reader.onloadend = () => {
+            this.setState({
+                file: file,
+                imagePreviewUrl: reader.result
+            });
+        }
+
+        reader.readAsDataURL(file)
         
     }  
 
     fileUploadHandler(e){
-        e.preventDefault()
-        var fb = new FormData();
-        fb.append('image', this.state.selectFile, this.state.selectFile.name);
-        console.log(fb)
+        // e.preventDefault()
+        // var fb = new FormData();
+        // fb.append('image', this.state.selectFile, this.state.selectFile.name);
+        // console.log(fb)
         // axios.post('https://jsonplaceholder.typicode.com/posts', fb)
         // .then(response =>{
         //     console.log(response)
@@ -34,10 +48,26 @@ export default class ImageUpload extends Component {
         // .catch(error => {e
         //     console.log(error)
         // })
+        e.preventDefault();
+        // TODO: do something with -> this.state.file
+        console.log('handle uploading-', this.state.file);
+           Api.post('posts', this.state.file)
+            .then(response =>{
+                console.log(response)
+            })
+            .catch(error => {e
+                console.log(error)
+            })        
     }
 
 render() {
-    const {selectFile} = this.state
+    let {imagePreviewUrl} = this.state;
+    let $imagePreview = null;
+    if (imagePreviewUrl) {
+      $imagePreview = (<img src={imagePreviewUrl} />);
+    } else {
+      $imagePreview = (<div className="previewText">Please select an Image for Preview</div>);
+    }
     return (
         <div>
             <h1>Image Upload To Rest API </h1>
@@ -46,8 +76,11 @@ render() {
                     <label>Image upload</label>
                     <input type="file" onChange={this.fileSelectHandler.bind(this)} className="form-control" name="selectFile" id="selectFile" />
                 </div>
-                <button onClick={this.fileUploadHandler} type="submit" className="btn btn-primary">Submit</button>
+                <button onClick={ (e)=>this.fileUploadHandler(e)} type="submit" className="btn btn-primary">Submit</button>
             </form>
+            <div className="imgPreview">
+            {$imagePreview}
+            </div>
         </div>
     );
 }
