@@ -51,7 +51,11 @@ export default class ImageUpload extends Component {
         e.preventDefault();
         // TODO: do something with -> this.state.file
         console.log('handle uploading-', this.state.file);
-           Api.post('posts', this.state.file)
+           Api.post('posts', this.state.file, {
+               onUploadProgress : ProgressEvent =>{
+                   console.log( 'Upload Progress' + Math.random(ProgressEvent.loaded / ProgressEvent.total * 100) + '%')
+               }
+           })
             .then(response =>{
                 console.log(response)
             })
@@ -72,11 +76,17 @@ render() {
         <div>
             <h1>Image Upload To Rest API </h1>
             <form > 
-                <div className="form-group">
+                <div className="form-group" >
                     <label>Image upload</label>
-                    <input type="file" onChange={this.fileSelectHandler.bind(this)} className="form-control" name="selectFile" id="selectFile" />
+                    <input type="file" 
+                    onChange={this.fileSelectHandler.bind(this)} 
+                    className="form-control" 
+                    name="selectFile" 
+                    id="selectFile"
+                    />
                 </div>
                 <button onClick={ (e)=>this.fileUploadHandler(e)} type="submit" className="btn btn-primary">Submit</button>
+                <h3>{}</h3>
             </form>
             <div className="imgPreview">
             {$imagePreview}

@@ -70029,7 +70029,11 @@ function (_Component) {
       e.preventDefault(); // TODO: do something with -> this.state.file
 
       console.log('handle uploading-', this.state.file);
-      _config_Config_js__WEBPACK_IMPORTED_MODULE_2__["default"].post('posts', this.state.file).then(function (response) {
+      _config_Config_js__WEBPACK_IMPORTED_MODULE_2__["default"].post('posts', this.state.file, {
+        onUploadProgress: function onUploadProgress(ProgressEvent) {
+          console.log('Upload Progress' + Math.random(ProgressEvent.loaded / ProgressEvent.total * 100) + '%');
+        }
+      }).then(function (response) {
         console.log(response);
       })["catch"](function (error) {
         e;
@@ -70068,7 +70072,7 @@ function (_Component) {
         },
         type: "submit",
         className: "btn btn-primary"
-      }, "Submit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Submit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "imgPreview"
       }, $imagePreview));
     }
