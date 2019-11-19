@@ -35,7 +35,11 @@ render() {
                 posted.length ?
             posted.map(datapost => <div key={datapost.id}>{datapost.title}</div>) : null
             }
-            {errorMsg ?<div className="text-danger">{errorMsg}</div> : null}
+            {errorMsg ?
+            <div className="alert alert-danger">
+                <strong>Failed!</strong>{errorMsg}
+            </div> 
+            : null}
         </div>
     );
 }

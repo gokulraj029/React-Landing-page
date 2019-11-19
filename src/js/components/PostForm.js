@@ -10,7 +10,8 @@ export default class PostForm extends Component {
         this.state={
             userId : '',
             title : '',
-            body : ''
+            body : '',
+            successMsg: ''
         };
     }
 
@@ -30,7 +31,20 @@ export default class PostForm extends Component {
         console.log("State User =" + this.state.userId, "State Title =" + this.state.title, "State Body =" + this.state.body)
         axios.post('https://jsonplaceholder.typicode.com/posts', this.state)
         .then(response =>{
-            console.log(response)
+            console.log(response.status)
+            // if(response.status == 201){
+            // <div className="alert alert-success">
+            //     <strong>Success!</strong>Your form succefully submitted
+            // </div>
+            // }
+            response.status = 201
+            if (response.status === 201) {
+            
+              this.setState({successMsg: "Your Form Submitted Successfully"})
+              console.log(this.setState)
+            }
+
+            // this.setState({success: Response.status})
         })
         .catch(error => {e
             console.log(error)
@@ -51,10 +65,15 @@ export default class PostForm extends Component {
 
 render() {
 
-    const {userId, title, body } = this.state
+    const {userId, title, body, successMsg } = this.state
     return (
         <div>
-            <h1>Post Form Data To Rest API </h1>
+            <h1>Post Form Data To Rest API </h1> 
+            {successMsg.length > 0 &&
+                <div  className="alert alert-success" >
+                    {successMsg}
+                </div> 
+            }     
             <form onSubmit={this.submitHandler.bind(this)}> 
                 <div className="form-group">
                     <label>User ID</label>
@@ -68,6 +87,7 @@ render() {
                     <label>Body</label>
                     <input type="text" className="form-control" onChange={this.changeHandler.bind(this)} value={body} name="body" id="Body" placeholder="Enter Body" />
                 </div>
+                
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>

@@ -9,6 +9,7 @@ require('./bootstrap');
 // Html Import
 
 require('./config/Config.js');
+require('./components/App.js');
 require('./components/Example.js');
 require('./components/Header.js');
 require('./components/Slider.js');
