@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default class PostForm extends Component {
+
 
 
     constructor(props){
@@ -37,9 +40,10 @@ export default class PostForm extends Component {
             //     <strong>Success!</strong>Your form succefully submitted
             // </div>
             // }
+            
             response.status = 201
             if (response.status === 201) {
-            
+                toast("Your Form Submitted Successfully!");
               this.setState({successMsg: "Your Form Submitted Successfully"})
               console.log(this.setState)
             }
@@ -74,6 +78,7 @@ render() {
                     {successMsg}
                 </div> 
             }     
+            <ToastContainer />  
             <form onSubmit={this.submitHandler.bind(this)}> 
                 <div className="form-group">
                     <label>User ID</label>
