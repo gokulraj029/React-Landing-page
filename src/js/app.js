@@ -32,6 +32,7 @@ require('./components/PostForm.js');
 require('./components/LocalStorage.js');
 require('./components/ImageUpload.js');
 require('./config/Config.js');
+require('./components/FormWithImage.js');
 // require('./components/FileUpload.js');
 
 // Bootstrap Component
