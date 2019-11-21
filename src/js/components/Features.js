@@ -107,5 +107,5 @@ class Features extends Component{
       );
    }
 }
-export default features;
-ReactDOM.render(<Features />, document.getElementById('features'));
+export default Features;
+// ReactDOM.render(<Features />, document.getElementById('features'));

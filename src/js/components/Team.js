@@ -46,6 +46,6 @@ export default class Team extends Component {
     }
 }
 
-if (document.getElementById('team')) {
-    ReactDOM.render(<Team />, document.getElementById('team'));
+if (document.getElementById('Team')) {
+    // ReactDOM.render(<Team />, document.getElementById('team'));
 }

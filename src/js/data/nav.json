@@ -1,34 +1,42 @@
 [
     {
+        "id" : 1,
+        "menuName" : "Home",
+        "path" : "/"
+    },
+    {
         "id" : 2,
-        "menuName" : "Home"
+        "menuName" : "Features",
+        "path" : "/features"
     },
     {
         "id" : 3,
-        "menuName" : "Features"
+        "menuName" : "Services",
+        "path" : "/services"
     },
     {
         "id" : 4,
-        "menuName" : "Services"
+        "menuName" : "Team",
+        "path" : "/team"
     },
     {
         "id" : 5,
-        "menuName" : "Team"
+        "menuName" : "Pricing",
+        "path" : "/pricing"
     },
     {
         "id" : 6,
-        "menuName" : "Pricing"
+        "menuName" : "Faq",
+        "path" : "/faq"
     },
     {
         "id" : 7,
-        "menuName" : "Faq"
+        "menuName" : "Blog",
+        "path" : "/blog"
     },
     {
         "id" : 8,
-        "menuName" : "Blog"
-    },
-    {
-        "id" : 9,
-        "menuName" : "Contact"
+        "menuName" : "Contact",
+        "path" : "/contact"
     }
 ]

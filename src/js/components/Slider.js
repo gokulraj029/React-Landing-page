@@ -53,5 +53,5 @@ class Slider extends Component{
       );
    }
 }
-export default slider;
-ReactDOM.render(<Slider />, document.getElementById('slider'));
+export default Slider;
+// ReactDOM.render(<Slider />, document.getElementById('slider'));
