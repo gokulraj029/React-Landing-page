@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-export default class Subscribe extends Component {
+class Subscribe extends Component {
     render() {
         return (
             <section className="section bg-subscriber">
@@ -31,6 +31,8 @@ export default class Subscribe extends Component {
     }
 }
 
-if (document.getElementById('subscribe')) {
-    ReactDOM.render(<Subscribe />, document.getElementById('subscribe'));
-}
+export default Subscribe
+
+// if (document.getElementById('subscribe')) {
+//     ReactDOM.render(<Subscribe />, document.getElementById('subscribe'));
+// }

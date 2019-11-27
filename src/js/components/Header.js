@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom';
 import DataNav from '../data/nav.json'
 import Slider from '../components/Slider'
 import Features from '../components/Features'
+import Services from '../components/Services'
 import Team from '../components/Team'
+import Pricing from '../components/Pricing'
+import Faq from '../components/Faq'
+import Blog from '../components/Blog'
+import Contect from '../components/Contect'
 import {BrowserRouter, Route, Switch, NavLink} from 'react-router-dom'
 class Header extends Component{
 
-   render(){
+   render(){    
       return(
         <BrowserRouter>
         <div>
@@ -42,7 +47,12 @@ class Header extends Component{
         <Switch>
             <Route exact path="/" component={Slider} />
             <Route exact path="/features" component={Features} />
+            <Route exact path="/services" component={Services} />
             <Route exact path="/team" component={Team} />
+            <Route exact path="/Pricing" component={Pricing} />
+            <Route exact path="/faq" component={Faq} />
+            <Route exact path="/blog" component={Blog} />
+            <Route exact path="/contact" component={Contect} />
         </Switch>
 
         </div>

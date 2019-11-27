@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-export default class Get extends Component {
+class Get extends Component {
     render() {
         return (
             <section className="section bg-cta">
@@ -21,6 +21,8 @@ export default class Get extends Component {
     }
 }
 
-if (document.getElementById('get')) {
-    ReactDOM.render(<Get />, document.getElementById('get'));
-}
+export default Get
+
+// if (document.getElementById('get')) {
+//     ReactDOM.render(<Get />, document.getElementById('get'));
+// }

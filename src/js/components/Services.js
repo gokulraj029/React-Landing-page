@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ServiceData from '../data/services.json'
+import Get from '../components/Get'
+import OurClient from '../components/OurClient'
+import Agency from '../components/Agency'
+import Subscribe from '../components/Subscribe'
 
-export default class Services extends Component {
+
+class Services extends Component {
     render() {
         return (
+            <div>
             <section className="section" id="services">
             <div className="container">
                 <div className="row">
@@ -40,11 +46,18 @@ export default class Services extends Component {
                 </div>
             </div>
         </section>
-
+        <Get></Get>
+        <OurClient></OurClient>
+        <Agency></Agency>
+        <Subscribe></Subscribe>
+        </div>
         );
     }
 }
 
-if (document.getElementById('services')) {
-    ReactDOM.render(<Services />, document.getElementById('services'));
-}
+export default Services
+
+
+// if (document.getElementById('services')) {
+//     ReactDOM.render(<Services />, document.getElementById('services'));
+// }

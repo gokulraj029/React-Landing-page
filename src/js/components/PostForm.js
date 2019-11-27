@@ -82,11 +82,17 @@ render() {
             <form onSubmit={this.submitHandler.bind(this)}> 
                 <div className="form-group">
                     <label>User ID</label>
-                    <input type="text" className="form-control" onChange={this.changeHandler.bind(this)} value={userId} name="userId" id="userID"  placeholder="Enter User id" />
+                    <input type="text" className="form-control" 
+                    onChange={this.changeHandler.bind(this)} 
+                    value={userId} name="userId" id="userID"  
+                    placeholder="Enter User id" required />
                 </div>
                 <div className="form-group">
                     <label>Title</label>
-                    <input type="text" className="form-control" onChange={this.changeHandler.bind(this)} value={title} name="title" id="title" placeholder="Enter Title" />
+                    <input type="text" className="form-control" 
+                    onChange={this.changeHandler.bind(this)} 
+                    value={title} name="title" id="title" 
+                    placeholder="Enter Title" required />
                 </div>
                 <div className="form-group">
                     <label>Body</label>

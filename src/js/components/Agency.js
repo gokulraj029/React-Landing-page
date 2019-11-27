@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import AgencyData from '../data/agency.json'
 
-export default class Agency extends Component {
+class Agency extends Component {
     render() {
         return (
         <section className="section bg-light">
@@ -52,6 +52,8 @@ export default class Agency extends Component {
     }
 }
 
-if (document.getElementById('agency')) {
-    ReactDOM.render(<Agency />, document.getElementById('agency'));
-}
+export default Agency
+
+// if (document.getElementById('agency')) {
+//     ReactDOM.render(<Agency />, document.getElementById('agency'));
+// }

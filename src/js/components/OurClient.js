@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import OurClientData from '../data/ourClient.json'
 
-export default class OurClient extends Component {
+class OurClient extends Component {
     render() {
         return (
             <section className="section">
@@ -41,7 +41,7 @@ export default class OurClient extends Component {
         );
     }
 }
-
-if (document.getElementById('ourclient')) {
-    ReactDOM.render(<OurClient />, document.getElementById('ourclient'));
-}
+export default OurClient
+// if (document.getElementById('ourclient')) {
+//     ReactDOM.render(<OurClient />, document.getElementById('ourclient'));
+// }
